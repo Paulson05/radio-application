@@ -1,25 +1,13 @@
 @extends('frontend.template.master')
-@section('body')section class="single-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="single-content">
-                    <h2>About us</h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-</section
-><section class="section about-part">
+@section('body')
+
+
+<section class="section about-part">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <div class="about-img">
-                    <a href="#" class="about-1"><img src="img/about-1.jpg" alt="about-1"></a><a href="#" class="about-2"><img src="img/about-2.jpg" alt="about-2"></a>
+                    <a href="#" class="about-1"><img src="assets/img/about-1.jpg" alt="about-1"></a><a href="#" class="about-2"><img src="assets/img/about-2.jpg" alt="about-2"></a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6">

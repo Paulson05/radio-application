@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+
+
+Route::get('/about',[PagesController::class, 'about'])->name('frontend.about');
+Route::get('/contact-us',[PagesController::class, 'contactUs'])->name('frontend.contactus');
+Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.scheduler');
+

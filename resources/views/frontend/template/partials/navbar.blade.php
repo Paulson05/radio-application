@@ -11,8 +11,8 @@
                     </div>
                     <ul class="navbar-list">
                         <li class="navbar-item active"><a class="navbar-link" href="index.html"><span><i class="fas fa-headphones-alt"></i>Home</span></a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="about.html"><span><i class="fas fa-headphones-alt"></i>About us</span></a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="show.html"><span><i class="fas fa-headphones-alt"></i>Show Schedule</span></a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.about')}}"><span><i class="fas fa-headphones-alt"></i>About us</span></a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.scheduler')}}"><span><i class="fas fa-headphones-alt"></i>Show Schedule</span></a></li>
                         <li class="navbar-player"><div class="player"><button class="player-btn" id="play-pause-button"><i class="fas fa-play"></i></button></div></li>
                         <li class="navbar-item navbar-dropdown"><a class="navbar-link" href="#"><span><i class="fas fa-headphones-alt"></i>pages</span><small class="fas fa-chevron-down"></small></a>
                             <ul class="dropdown-list">
@@ -28,7 +28,7 @@
                                 <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
                             </ul>
                         </li>
-                        <li class="navbar-item"><a class="navbar-link" href="contact.html"><span><i class="fas fa-headphones-alt"></i>Contact us</span></a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.contactus')}}"><span><i class="fas fa-headphones-alt"></i>Contact us</span></a></li>
                     </ul>
                     <div class="navbar-btn">
                         <a class="btn btn-outline" href="sponsor.html"><i class="fas fa-hands-helping"></i><span>Become a Sponsor</span></a>
