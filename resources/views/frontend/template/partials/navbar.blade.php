@@ -10,17 +10,12 @@
                         <button class="cencel"><i class="fas fa-times"></i></button>
                     </div>
                     <ul class="navbar-list">
-                        <li class="navbar-item active"><a class="navbar-link" href="index.html"><span><i class="fas fa-headphones-alt"></i>Home</span></a></li>
+                        <li class="navbar-item active"><a class="navbar-link" href="{{route('homepage')}}"><span><i class="fas fa-headphones-alt"></i>Home</span></a></li>
                         <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.about')}}"><span><i class="fas fa-headphones-alt"></i>About us</span></a></li>
                         <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.scheduler')}}"><span><i class="fas fa-headphones-alt"></i>Show Schedule</span></a></li>
                         <li class="navbar-player"><div class="player"><button class="player-btn" id="play-pause-button"><i class="fas fa-play"></i></button></div></li>
-                        <li class="navbar-item navbar-dropdown"><a class="navbar-link" href="#"><span><i class="fas fa-headphones-alt"></i>pages</span><small class="fas fa-chevron-down"></small></a>
-                            <ul class="dropdown-list">
-                                <li><a class="dropdown-link" href="team.html">Team Members</a></li>
-                                <li><a class="dropdown-link" href="video.html">Videos</a></li>
-                                <li><a class="dropdown-link" href="gallery.html">Gallery</a></li>
-                                <li><a class="dropdown-link" href="sponsor.html">Become a Sponsor</a></li>
-                            </ul>
+                        <li class="navbar-item "><a class="navbar-link" href="{{route('frontend.team')}}"><span><i class="fas fa-headphones-alt"></i>AOPs</span></a>
+
                         </li>
                         <li class="navbar-item navbar-dropdown"><a class="navbar-link" href="#"><span><i class="fas fa-headphones-alt"></i>blogs</span><small class="fas fa-chevron-down"></small></a>
                             <ul class="dropdown-list">

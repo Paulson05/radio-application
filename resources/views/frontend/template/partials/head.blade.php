@@ -16,3 +16,5 @@
 <link rel="stylesheet" href="{{asset('assets/css/vendor/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/custom/main.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/custom/index.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/custom/team.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/custom/contact.css')}}">

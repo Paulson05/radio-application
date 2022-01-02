@@ -52,8 +52,8 @@
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <div class="about-img">
-                    <a href="#" class="about-1"><img src="img/about-1.jpg" alt="about-1"></a>
-                    <a href="#" class="about-2"><img src="img/about-2.jpg" alt="about-2"></a>
+                    <a href="#" class="about-1"><img src="assets/img/about-1.jpg" alt="about-1"></a>
+                    <a href="#" class="about-2"><img src="assets/img/about-2.jpg" alt="about-2"></a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
@@ -95,16 +95,16 @@
                 <div class="tab-pane active" id="sat">
                     <div class="row"><div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="show-card"><div class="show-content">
-                                    <div class="show-bg"><img src="img/show-1.jpg" alt="show-1">
+                                    <div class="show-bg"><img src="assets/img/show-1.jpg" alt="show-1">
                                     </div>
                                     <div class="show-overlay"><div class="show-time">
                                             <p>08:00 - 10:00pm</p>
                                             <h4>Tiny Time Talks</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a></li>
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -117,15 +117,15 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-2.jpg" alt="show-2">
+                                        <img src="assets/img/show-2.jpg" alt="show-2">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-active">
-                                            <img src="img/sound.gif" alt="sound">
+                                            <img src="assets/img/sound.gif" alt="sound">
                                         </div>
                                         <div class="show-time"><p>09:15 - 10:45pm</p><h4>Public Reaction</h4></div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -146,8 +146,8 @@
                                             <h4>Couple Story</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -160,7 +160,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -168,7 +168,7 @@
                                             <h4>Transport Signal</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-5.jpg" alt="show-5">
+                                        <img src="assets/img/show-5.jpg" alt="show-5">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -189,7 +189,7 @@
                                             <h4>Comedy Nightclub</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6">
+                                        <img src="assets/img/show-6.jpg" alt="show-6">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -211,10 +211,10 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-6.jpg" alt="host-6"></a>
+                                                <a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="img/host-7.jpg" alt="host-7"></a>
+                                                <a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -228,7 +228,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7">
+                                        <img src="assets/img/show-7.jpg" alt="show-7">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -237,7 +237,7 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-7.jpg" alt="host-7"></a>
+                                                <a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -251,7 +251,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-8.jpg" alt="show-8">
+                                        <img src="assets/img/show-8.jpg" alt="show-8">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -260,9 +260,9 @@
                                         </div>
                                         <ul class="show-host">
                                             <li><a href="#">
-                                                    <img src="img/host-8.jpg" alt="host-8"></a></li>
+                                                    <img src="assets/img/host-8.jpg" alt="host-8"></a></li>
                                             <li>
-                                                <a href="#"><img src="img/host-5.jpg" alt="host-5"></a>
+                                                <a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -280,7 +280,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-1.jpg" alt="show-1">
+                                        <img src="assets/img/show-1.jpg" alt="show-1">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -289,12 +289,12 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-1.jpg" alt="host-1"></a>
+                                                <a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="img/host-2.jpg" alt="host-2"></a>
+                                                <a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a>
                                             </li>
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -307,7 +307,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -316,7 +316,7 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-4.jpg" alt="host-4"></a>
+                                                <a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -330,13 +330,13 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time"><p>03:15 - 04:55am</p><h4>Couple Story</h4></div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -347,12 +347,12 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-2.jpg" alt="show-2">
+                                        <img src="assets/img/show-2.jpg" alt="show-2">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time"><p>05:25 - 06:30pm</p><h4>Transport Signal</h4></div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -365,7 +365,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-5.jpg" alt="show-5">
+                                        <img src="assets/img/show-5.jpg" alt="show-5">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -374,7 +374,7 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-5.jpg" alt="host-4"></a>
+                                                <a href="#"><img src="assets/img/host-5.jpg" alt="host-4"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -388,7 +388,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6">
+                                        <img src="assets/img/show-6.jpg" alt="show-6">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -396,8 +396,8 @@
                                             <h4>Knowledge sharing</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -410,7 +410,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7">
+                                        <img src="assets/img/show-7.jpg" alt="show-7">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -418,7 +418,7 @@
                                             <h4>Music for Emotion</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -431,7 +431,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-8.jpg" alt="show-8">
+                                        <img src="assets/img/show-8.jpg" alt="show-8">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -440,9 +440,9 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-8.jpg" alt="host-8"></a>
+                                                <a href="#"><img src="assets/img/host-8.jpg" alt="host-8"></a>
                                             </li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -459,7 +459,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -467,8 +467,8 @@
                                             <h4>Tiny Time Talks</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a></li>
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -481,7 +481,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7">
+                                        <img src="assets/img/show-7.jpg" alt="show-7">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -489,9 +489,9 @@
                                             <h4>Public Reaction</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -504,15 +504,15 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3"></div>
+                                        <img src="assets/img/show-3.jpg" alt="show-3"></div>
                                     <div class="show-overlay">
                                         <div class="show-time">
                                             <p>03:15 - 04:55am</p>
                                             <h4>Couple Story</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -524,7 +524,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="show-card">
                                 <div class="show-content">
-                                    <div class="show-bg"><img src="img/show-7.jpg" alt="show-7"></div>
+                                    <div class="show-bg"><img src="assets/img/show-7.jpg" alt="show-7"></div>
                                     <div class="show-overlay">
                                         <div class="show-time">
                                             <p>05:25 - 06:30pm</p>
@@ -532,7 +532,7 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-7.jpg" alt="host-7"></a>
+                                                <a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -546,14 +546,14 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-5.jpg" alt="show-5"></div>
+                                        <img src="assets/img/show-5.jpg" alt="show-5"></div>
                                     <div class="show-overlay"><div class="show-time">
                                             <p>01:45 - 02:30am</p>
                                             <h4>Comedy Nightclub</h4>
                                         </div>
                                         <ul class="show-host">
                                             <li><a href="#">
-                                                    <img src="img/host-5.jpg" alt="host-4"></a></li>
+                                                    <img src="assets/img/host-5.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -566,7 +566,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6">
+                                        <img src="assets/img/show-6.jpg" alt="show-6">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -574,8 +574,8 @@
                                             <h4>Knowledge sharing</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -587,14 +587,14 @@
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="show-card">
                                 <div class="show-content">
-                                    <div class="show-bg"><img src="img/show-2.jpg" alt="show-2"></div>
+                                    <div class="show-bg"><img src="assets/img/show-2.jpg" alt="show-2"></div>
                                     <div class="show-overlay">
                                         <div class="show-time">
                                             <p>02:45 - 03:10pm</p>
                                             <h4>Music for Emotion</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -607,7 +607,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-8.jpg" alt="show-8">
+                                        <img src="assets/img/show-8.jpg" alt="show-8">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -615,8 +615,8 @@
                                             <h4>Education for abroad</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-8.jpg" alt="host-8"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-8.jpg" alt="host-8"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -633,7 +633,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-1.jpg" alt="show-1">
+                                        <img src="assets/img/show-1.jpg" alt="show-1">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -641,7 +641,7 @@
                                             <h4>Tiny Time Talks</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -655,7 +655,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -663,7 +663,7 @@
                                             <h4>Public Reaction</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -676,7 +676,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -684,8 +684,8 @@
                                             <h4>Couple Story</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -698,7 +698,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7">
+                                        <img src="assets/img/show-7.jpg" alt="show-7">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -706,9 +706,9 @@
                                             <h4>Transport Signal</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -721,7 +721,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-5.jpg" alt="show-5">
+                                        <img src="assets/img/show-5.jpg" alt="show-5">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -731,7 +731,7 @@
                                         <ul class="show-host">
                                             <li>
                                                 <a href="#">
-                                                    <img src="img/host-5.jpg" alt="host-4">
+                                                    <img src="assets/img/host-5.jpg" alt="host-4">
                                                 </a>
                                             </li>
                                         </ul>
@@ -746,7 +746,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6">
+                                        <img src="assets/img/show-6.jpg" alt="show-6">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -755,8 +755,8 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                                <a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -769,7 +769,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-2.jpg" alt="show-2">
+                                        <img src="assets/img/show-2.jpg" alt="show-2">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -777,8 +777,8 @@
                                             <h4>Music for Emotion</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -791,7 +791,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-8.jpg" alt="show-8">
+                                        <img src="assets/img/show-8.jpg" alt="show-8">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -800,7 +800,7 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-8.jpg" alt="host-8"></a></li>
+                                                <a href="#"><img src="assets/img/host-8.jpg" alt="host-8"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -817,7 +817,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-1.jpg" alt="show-1">
+                                        <img src="assets/img/show-1.jpg" alt="show-1">
                                     </div
                                     ><div class="show-overlay">
                                         <div class="show-time">
@@ -825,8 +825,8 @@
                                             <h4>Tiny Time Talks</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a></li>
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -839,7 +839,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -847,9 +847,9 @@
                                             <h4>Public Reaction</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -862,7 +862,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -870,8 +870,8 @@
                                             <h4>Couple Story</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -884,7 +884,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7">
+                                        <img src="assets/img/show-7.jpg" alt="show-7">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -893,7 +893,7 @@
                                         </div>
                                         <ul class="show-host">
                                             <li>
-                                                <a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                                <a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -906,7 +906,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-1.jpg" alt="show-1">
+                                        <img src="assets/img/show-1.jpg" alt="show-1">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -914,7 +914,7 @@
                                             <h4>Comedy Nightclub</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -927,15 +927,15 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6"></div>
+                                        <img src="assets/img/show-6.jpg" alt="show-6"></div>
                                     <div class="show-overlay">
                                         <div class="show-time">
                                             <p>04:45 - 05:30am</p>
                                             <h4>Knowledge sharing</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -948,7 +948,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-2.jpg" alt="show-2">
+                                        <img src="assets/img/show-2.jpg" alt="show-2">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -956,7 +956,7 @@
                                             <h4>Music for Emotion</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -969,7 +969,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -977,8 +977,8 @@
                                             <h4>Education for abroad</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -995,7 +995,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-1">
+                                        <img src="assets/img/show-3.jpg" alt="show-1">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1003,8 +1003,8 @@
                                             <h4>Tiny Time Talks</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1017,7 +1017,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1025,7 +1025,7 @@
                                             <h4>Public Reaction</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1038,7 +1038,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-1.jpg" alt="show-1">
+                                        <img src="assets/img/show-1.jpg" alt="show-1">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1046,9 +1046,9 @@
                                             <h4>Couple Story</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-1.jpg" alt="host-1"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-1.jpg" alt="host-1"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1061,7 +1061,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7">
+                                        <img src="assets/img/show-7.jpg" alt="show-7">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1069,7 +1069,7 @@
                                             <h4>Transport Signal</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1082,7 +1082,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-5.jpg" alt="show-5">
+                                        <img src="assets/img/show-5.jpg" alt="show-5">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1090,7 +1090,7 @@
                                             <h4>Comedy Nightclub</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1103,7 +1103,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6">
+                                        <img src="assets/img/show-6.jpg" alt="show-6">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1111,8 +1111,8 @@
                                             <h4>Knowledge sharing</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1125,7 +1125,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1133,7 +1133,7 @@
                                             <h4>Music for Emotion</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1146,7 +1146,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-8.jpg" alt="show-8">
+                                        <img src="assets/img/show-8.jpg" alt="show-8">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1154,8 +1154,8 @@
                                             <h4>Education for abroad</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-8.jpg" alt="host-8"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-8.jpg" alt="host-8"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1172,7 +1172,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1180,9 +1180,9 @@
                                             <h4>Tiny Time Talks</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1195,7 +1195,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-4.jpg" alt="show-4">
+                                        <img src="assets/img/show-4.jpg" alt="show-4">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1203,7 +1203,7 @@
                                             <h4>Public Reaction</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1216,7 +1216,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-3.jpg" alt="show-3">
+                                        <img src="assets/img/show-3.jpg" alt="show-3">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1224,8 +1224,8 @@
                                             <h4>Couple Story</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-4.jpg" alt="host-4"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-4.jpg" alt="host-4"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1238,14 +1238,14 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-7.jpg" alt="show-7"></div>
+                                        <img src="assets/img/show-7.jpg" alt="show-7"></div>
                                     <div class="show-overlay">
                                         <div class="show-time">
                                             <p>05:25 - 06:30pm</p>
                                             <h4>Transport Signal</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1258,7 +1258,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-8.jpg" alt="show-8">
+                                        <img src="assets/img/show-8.jpg" alt="show-8">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1266,7 +1266,7 @@
                                             <h4>Comedy Nightclub</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-8.jpg" alt="host-8"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-8.jpg" alt="host-8"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1279,7 +1279,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-6.jpg" alt="show-6">
+                                        <img src="assets/img/show-6.jpg" alt="show-6">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1287,8 +1287,8 @@
                                             <h4>Knowledge sharing</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-6.jpg" alt="host-6"></a></li>
-                                            <li><a href="#"><img src="img/host-7.jpg" alt="host-7"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-6.jpg" alt="host-6"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-7.jpg" alt="host-7"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1301,7 +1301,7 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-2.jpg" alt="show-2">
+                                        <img src="assets/img/show-2.jpg" alt="show-2">
                                     </div>
                                     <div class="show-overlay">
                                         <div class="show-time">
@@ -1309,7 +1309,7 @@
                                             <h4>Music for Emotion</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-2.jpg" alt="host-2"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-2.jpg" alt="host-2"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1322,15 +1322,15 @@
                             <div class="show-card">
                                 <div class="show-content">
                                     <div class="show-bg">
-                                        <img src="img/show-5.jpg" alt="show-5"></div>
+                                        <img src="assets/img/show-5.jpg" alt="show-5"></div>
                                     <div class="show-overlay">
                                         <div class="show-time">
                                             <p>06:45 - 08:10am</p>
                                             <h4>Education for abroad</h4>
                                         </div>
                                         <ul class="show-host">
-                                            <li><a href="#"><img src="img/host-3.jpg" alt="host-3"></a></li>
-                                            <li><a href="#"><img src="img/host-5.jpg" alt="host-5"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-3.jpg" alt="host-3"></a></li>
+                                            <li><a href="#"><img src="assets/img/host-5.jpg" alt="host-5"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1366,7 +1366,7 @@
                 <div class="team-slider slider-arrow">
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="img/team-1.jpg" alt="team-1">
+                            <img src="assets/img/team-1.jpg" alt="team-1">
                             <div class="team-overlay">
                                 <ul class="team-icon">
                                     <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1382,7 +1382,7 @@
                     </div>
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="img/team-2.jpg" alt="team-2">
+                            <img src="assets/img/team-2.jpg" alt="team-2">
                             <div class="team-overlay">
                                 <ul class="team-icon">
                                     <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1398,7 +1398,7 @@
                     </div>
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="img/team-3.jpg" alt="team-3">
+                            <img src="assets/img/team-3.jpg" alt="team-3">
                             <div class="team-overlay">
                                 <ul class="team-icon">
                                     <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1413,7 +1413,7 @@
                         </div>
                     </div>
                     <div class="team-card">
-                        <div class="team-img"><img src="img/team-4.jpg" alt="team-4">
+                        <div class="team-img"><img src="assets/img/team-4.jpg" alt="team-4">
                             <div class="team-overlay">
                                 <ul class="team-icon">
                                     <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1429,7 +1429,7 @@
                     </div>
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="img/team-5.jpg" alt="team-1">
+                            <img src="assets/img/team-5.jpg" alt="team-1">
                             <div class="team-overlay">
                                 <ul class="team-icon">
                                     <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1469,7 +1469,7 @@
                 <div class="video-slider slider-arrow">
                     <div class="video-card">
                         <div class="video-img">
-                            <img src="img/video-1.jpg" alt="video-1">
+                            <img src="assets/img/video-1.jpg" alt="video-1">
                             <div class="video-overlay">
                                 <a class="venobox icon icon-inline" data-autoplay="true" data-vbtype="video" href="https://youtu.be/J7Kyv2inOMU"><i class="fas fa-play"></i></a>
                             </div>
@@ -1481,7 +1481,7 @@
                     </div>
                     <div class="video-card">
                         <div class="video-img">
-                            <img src="img/video-2.jpg" alt="video-2">
+                            <img src="assets/img/video-2.jpg" alt="video-2">
                             <div class="video-overlay">
                                 <a class="venobox icon icon-inline" data-autoplay="true" data-vbtype="video" href="https://youtu.be/J7Kyv2inOMU"><i class="fas fa-play"></i></a></div>
                         </div>
@@ -1492,7 +1492,7 @@
                     </div>
                     <div class="video-card">
                         <div class="video-img">
-                            <img src="img/video-3.jpg" alt="video-3">
+                            <img src="assets/img/video-3.jpg" alt="video-3">
                             <div class="video-overlay">
                                 <a class="venobox icon icon-inline" data-autoplay="true" data-vbtype="video" href="https://youtu.be/J7Kyv2inOMU"><i class="fas fa-play"></i></a>
                             </div>
@@ -1504,7 +1504,7 @@
                     </div>
                     <div class="video-card">
                         <div class="video-img">
-                            <img src="img/video-4.jpg" alt="video-4">
+                            <img src="assets/img/video-4.jpg" alt="video-4">
                             <div class="video-overlay">
                                 <a class="venobox icon icon-inline" data-autoplay="true" data-vbtype="video" href="https://youtu.be/J7Kyv2inOMU"><i class="fas fa-play"></i></a></div>
                         </div>
@@ -1538,13 +1538,13 @@
             <div class="col-lg-12">
                 <div class="gallery-content">
                     <ul class="gallery-list">
-                        <li class="verti-img"><img src="img/gallery-1.jpg" alt="gallery-1"></li>
-                        <li class="hori-img"><img src="img/gallery-2.jpg" alt="gallery-2"></li>
-                        <li class="big-img"><img src="img/gallery-3.jpg" alt="gallery-3"></li>
-                        <li><img src="img/gallery-4.jpg" alt="gallery-4"></li>
-                        <li><img src="img/gallery-5.jpg" alt="gallery-5"></li>
-                        <li><img src="img/gallery-6.jpg" alt="gallery-6"></li>
-                        <li><img src="img/gallery-7.jpg" alt="gallery-7"></li>
+                        <li class="verti-img"><img src="assets/img/gallery-1.jpg" alt="gallery-1"></li>
+                        <li class="hori-img"><img src="assets/img/gallery-2.jpg" alt="gallery-2"></li>
+                        <li class="big-img"><img src="assets/img/gallery-3.jpg" alt="gallery-3"></li>
+                        <li><img src="assets/img/gallery-4.jpg" alt="gallery-4"></li>
+                        <li><img src="assets/img/gallery-5.jpg" alt="gallery-5"></li>
+                        <li><img src="assets/img/gallery-6.jpg" alt="gallery-6"></li>
+                        <li><img src="assets/img/gallery-7.jpg" alt="gallery-7"></li>
                     </ul>
                 </div>
             </div>
@@ -1571,14 +1571,14 @@
             <div class="col-lg-12">
                 <div class="blog-slider slider-arrow">
                     <div class="blog-card">
-                        <img src="img/blog-1.jpg" alt="blog-1">
+                        <img src="assets/img/blog-1.jpg" alt="blog-1">
                         <div class="blog-overlay">
                             <p>03 february 2020</p>
                             <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
                             <a class="btn btn-outline" href="#">read more</a>
                         </div>
                     </div>
-                    <div class="blog-card"><img src="img/blog-2.jpg" alt="blog-2">
+                    <div class="blog-card"><img src="assets/img/blog-2.jpg" alt="blog-2">
                         <div class="blog-overlay">
                             <p>03 february 2020</p>
                             <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
@@ -1586,14 +1586,14 @@
                         </div>
                     </div>
                     <div class="blog-card">
-                        <img src="img/blog-3.jpg" alt="blog-3">
+                        <img src="assets/img/blog-3.jpg" alt="blog-3">
                         <div class="blog-overlay">
                             <p>03 february 2020</p>
                             <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
                             <a class="btn btn-outline" href="#">read more</a>
                         </div>
                     </div>
-                    <div class="blog-card"><img src="img/blog-4.jpg" alt="blog-4">
+                    <div class="blog-card"><img src="assets/img/blog-4.jpg" alt="blog-4">
                         <div class="blog-overlay">
                             <p>03 february 2020</p>
                             <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>

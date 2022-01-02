@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homepage');
-});
+})->name('homepage');
 
 
 Route::get('/about',[PagesController::class, 'about'])->name('frontend.about');
 Route::get('/contact-us',[PagesController::class, 'contactUs'])->name('frontend.contactus');
 Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.scheduler');
+Route::get('/team',[PagesController::class, 'team'])->name('frontend.team');
 

@@ -19,4 +19,7 @@ class PagesController extends Controller
      public function  scheduler(){
         return view('frontend.pages.scheduler');
      }
+     public  function team(){
+        return view ('frontend.pages.team');
+     }
 }
