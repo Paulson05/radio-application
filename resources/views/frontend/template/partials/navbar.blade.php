@@ -10,11 +10,11 @@
                         <button class="cencel"><i class="fas fa-times"></i></button>
                     </div>
                     <ul class="navbar-list">
-                        <li class="navbar-item active"><a class="navbar-link" href="{{route('homepage')}}"><span><i class="fas fa-headphones-alt"></i>Home</span></a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.about')}}"><span><i class="fas fa-headphones-alt"></i>About us</span></a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.scheduler')}}"><span><i class="fas fa-headphones-alt"></i>Show Schedule</span></a></li>
+                        <li class="navbar-item {{ Route::currentRouteNamed('homepage') ? 'active' : '' }}"><a class="navbar-link" href="{{route('homepage')}}"><span><i class="fas fa-headphones-alt"></i>Home</span></a></li>
+                        <li class="navbar-item {{ Route::currentRouteNamed('frontend.about') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.about')}}"><span><i class="fas fa-headphones-alt"></i>About us</span></a></li>
+                        <li class="navbar-item {{ Route::currentRouteNamed('frontend.scheduler') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.scheduler')}}"><span><i class="fas fa-headphones-alt"></i>Show Schedule</span></a></li>
                         <li class="navbar-player"><div class="player"><button class="player-btn" id="play-pause-button"><i class="fas fa-play"></i></button></div></li>
-                        <li class="navbar-item "><a class="navbar-link" href="{{route('frontend.team')}}"><span><i class="fas fa-headphones-alt"></i>AOPs</span></a>
+                        <li class="navbar-item {{ Route::currentRouteNamed('frontend.team') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.team')}}"><span><i class="fas fa-headphones-alt"></i>Aops</span></a>
 
                         </li>
                         <li class="navbar-item navbar-dropdown"><a class="navbar-link" href="#"><span><i class="fas fa-headphones-alt"></i>blogs</span><small class="fas fa-chevron-down"></small></a>
