@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Team;
 use Illuminate\Http\Request;
 
 class TeamController extends Controller
@@ -14,7 +15,8 @@ class TeamController extends Controller
      */
     public function index()
     {
-        //
+        $teams = Team::all();
+        return view('admin.pages.team.index', ['teams' => $teams]);
     }
 
     /**
@@ -24,7 +26,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.team.create');
     }
 
     /**
@@ -35,7 +37,31 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        dd($request->all());
+
+        $this->validate($request,[
+           'name' => 'required',
+           'job_title' => 'required',
+           'image' => 'required',
+           'facebook_acc' => 'required',
+           'instagram_acc' => 'required',
+           'twitter_acc' =>  'required'
+        ]);
+        if ( $request->hasfile('image')){
+            $file  =$request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename =    time() . '.' .$extension;
+            $file->move('upload/photos', $filename);
+
+        }
+        else {
+            $filename='';
+        }
+
+
+        $team = Team::create(collect($request->only(['name', 'job_title', 'image', 'facebook_acc', 'instagram_acc', 'twitter_acc']))->put('image',$filename)->all());
+        $team->save();
+              return redirect()->back();
     }
 
     /**

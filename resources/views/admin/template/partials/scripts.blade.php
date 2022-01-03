@@ -293,3 +293,4 @@
         });
     });
 </script>
+@yield('scripts')

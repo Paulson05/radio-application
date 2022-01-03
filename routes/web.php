@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\TagController;
+use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Frontend\PagesController;
 use Illuminate\Support\Facades\Route;
@@ -27,12 +28,14 @@ Route::get('/', function () {
 Route::get('/about',[PagesController::class, 'about'])->name('frontend.about');
 Route::get('/contact-us',[PagesController::class, 'contactUs'])->name('frontend.contactus');
 Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.scheduler');
-Route::get('/team',[PagesController::class, 'team'])->name('frontend.team');
+Route::get('/home/team',[PagesController::class, 'team'])->name('frontend.team');
 
 
 Route::get('/dashboard',  [AdminController::class, 'dashboard'])->name('admin.dashboard');
 Route::get('/login',  [AdminController::class, 'getLogin'])->name('admin.get.login');
 Route::post('/post/login',  [AdminController::class, 'postLogin'])->name('admin.post.login');
+
+Route::resource('team', TeamController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
 
 
 Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit','create'  ]);

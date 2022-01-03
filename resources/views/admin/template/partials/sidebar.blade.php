@@ -55,6 +55,17 @@
         </a>
 
     </li>
+    <li  class="" >
+
+
+        <a href="{{route('team.index')}}">
+
+            <i class="now-ui-icons design_app"></i>
+
+            <p>Team</p>
+        </a>
+
+    </li>
 
     <li >
 

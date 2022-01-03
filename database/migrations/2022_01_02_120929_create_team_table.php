@@ -16,10 +16,10 @@ class CreateTeamTable extends Migration
         Schema::create('team', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->increments('job_title');
+            $table->string('job_title');
             $table->string('image');
             $table->text('facebook_acc');
-            $table->text('instagramme_acc');
+            $table->text('instagram_acc');
             $table->text('twitter_acc');
             $table->timestamps();
         });
