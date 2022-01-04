@@ -1,12 +1,12 @@
 <div class="navbar-bg">
     <div class="container">
         <div class="navbar-content">
-            <a class="navbar-logo" href="#"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="navbar-logo" href="#"><img src="assets/img/gm.jpg" alt="logo"></a>
             <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
             <div class="navbar-overlay">
                 <div class="navbar-slide">
                     <div class="slide-head">
-                        <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                        <a href="#"><img src="assets/img/gm2.jpg" alt="logo"></a>
                         <button class="cencel"><i class="fas fa-times"></i></button>
                     </div>
                     <ul class="navbar-list">

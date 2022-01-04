@@ -18,6 +18,7 @@ class CreateTeamTable extends Migration
             $table->string('name');
             $table->string('job_title');
             $table->string('image');
+            $table->string('slug')->nullable();
             $table->text('facebook_acc');
             $table->text('instagram_acc');
             $table->text('twitter_acc');

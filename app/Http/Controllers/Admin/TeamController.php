@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class TeamController extends Controller
 {
@@ -39,6 +40,7 @@ class TeamController extends Controller
     {
 //        dd($request->all());
 
+
         $this->validate($request,[
            'name' => 'required',
            'job_title' => 'required',
@@ -47,20 +49,18 @@ class TeamController extends Controller
            'instagram_acc' => 'required',
            'twitter_acc' =>  'required'
         ]);
-        if ( $request->hasfile('image')){
-            $file  =$request->file('image');
-            $extension = $file->getClientOriginalExtension();
-            $filename =    time() . '.' .$extension;
-            $file->move('upload/photos', $filename);
-
+        $data= $request->all();
+        $slug=Str::slug($request->input('name'));
+        $slug_count=Team::where('slug', $slug)->count();
+        if ($slug_count>0){
+            $slug = time(). '_'.$slug;
         }
-        else {
-            $filename='';
+        $data['slug']=$slug;
+//        return $data;
+        $status=Team::create($data);
+        if ($status){
+            return redirect()->route('team.index');
         }
-
-
-        $team = Team::create(collect($request->only(['name', 'job_title', 'image', 'facebook_acc', 'instagram_acc', 'twitter_acc']))->put('image',$filename)->all());
-        $team->save();
               return redirect()->back();
     }
 

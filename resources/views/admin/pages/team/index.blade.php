@@ -49,7 +49,7 @@
                 <tr>
                     <td>{{$loop->iteration}}</td>
                     <td>{{$user->name}}</td>
-                    <td><img src="{{$user->image}}" style="max-height: 20px; max-width: 20px;"></td>
+                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
                     <td>{{$user->job_title}}</td>
                     <td>{{$user->facebook_acc}}</td>
                     <td>{{$user->twitter_acc}}</td>

@@ -7,7 +7,7 @@
 <meta name="template-title" content="Ushno - FM Radio Station Bootstrap HTML Template">
 <meta name="keywords" content="ushno, fm, bootstrap, html, template, mp3, player, radio station, responsive, schedule, shoutcast, online radio station template, radio station html template, radio station website template, mp3 player">
 
-<title>Ushno - Home</title>
+<title>Gravity - Home</title>
 
 <link rel="icon" href="{{asset('assets/img/favicon.png')}}">
 <link rel="stylesheet" href="/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
