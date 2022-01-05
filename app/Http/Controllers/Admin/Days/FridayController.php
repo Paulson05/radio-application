@@ -33,7 +33,18 @@ class FridayController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'programme' => 'required',
+            'host' => 'required',
+            'time' => 'required',
+        ]);
+        $data= $request->all();
+//        return $data;
+        $status=Friday::create($data);
+        if ($status){
+            return redirect()->route('friday.index');
+        }
+        return redirect()->back();
     }
 
     /**

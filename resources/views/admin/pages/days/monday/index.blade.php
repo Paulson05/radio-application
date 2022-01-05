@@ -8,7 +8,7 @@
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('monday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
+        <a href="{{route('monday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create Monday prgrammes</a>
     </div>
 
 </div>
@@ -29,8 +29,11 @@
                 </thead>
                 <tfoot>
                 <tr>
-                    <th>Name</th>
-                    <th>Title</th>
+                    <th>ID</th>
+                    <th>Programme</th>
+                    <th>host</th>
+                    <th>image</th>
+                    <th>time</th>
 
                     <th class="disabled-sorting text-right">Actions</th>
                 </tr>
@@ -39,7 +42,10 @@
                 @foreach($monday as $data)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$data->title}}</td>
+                    <td>{{$data->programme}}</td>
+                    <td>{{$data->host}}</td>
+                    <td><img src="{{$data->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <td>{{$data->time}}</td>
 
                     <td class="text-right">
                         <a href="" title="show">
@@ -48,7 +54,7 @@
 
 
                         <a href="" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt"></i></a>
-                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-postid="{{$tag->id}}"><i class="fas fa-trash-alt">delete</i></a>
+                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-postid="{{$data->id}}"><i class="fas fa-trash-alt">delete</i></a>
                     </td>
                 </tr>
                 @endforeach

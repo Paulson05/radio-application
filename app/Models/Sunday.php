@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Sunday extends Model
 {
     use HasFactory;
+    protected $table = 'sundays';
+    protected $guarded = [];
 }

@@ -37,7 +37,18 @@ class MondayController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'programme' => 'required',
+            'host' => 'required',
+            'time' => 'required',
+        ]);
+        $data= $request->all();
+//        return $data;
+        $status=Monday::create($data);
+        if ($status){
+            return redirect()->route('monday.index');
+        }
+        return redirect()->back();
     }
 
     /**

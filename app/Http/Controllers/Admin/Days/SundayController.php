@@ -37,7 +37,18 @@ class SundayController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'programme' => 'required',
+            'host' => 'required',
+            'time' => 'required',
+        ]);
+        $data= $request->all();
+//        return $data;
+        $status=Sunday::create($data);
+        if ($status){
+            return redirect()->route('sunday.index');
+        }
+        return redirect()->back();
     }
 
     /**

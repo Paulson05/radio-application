@@ -17,6 +17,7 @@ class CreateTuesdaysTable extends Migration
             $table->increments('id');
             $table->string('programme');
             $table->string('host');
+            $table->string('image')->nullable();
             $table->string('time');
             $table->timestamps();
         });

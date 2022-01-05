@@ -37,7 +37,18 @@ class ThursdayController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'programme' => 'required',
+            'host' => 'required',
+            'time' => 'required',
+        ]);
+        $data= $request->all();
+//        return $data;
+        $status=Thursday::create($data);
+        if ($status){
+            return redirect()->route('thursday.index');
+        }
+        return redirect()->back();
     }
 
     /**
