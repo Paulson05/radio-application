@@ -70,32 +70,29 @@ class TeamController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
+    public function show(Team  $team){
+
+        return view ('admin.pages.team.show')->with([
+            'team'=> $team  // note id is post
+
+        ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function edit(Team $team)
     {
-        //
+
+        return view ('admin.pages.team.edit')->with([
+            'team'=> $team,
+
+        ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+    public function update(Request $request, Team  $team)
     {
-        //
+        $team->update($request->only(['title_heading', 'title_body','task_title', 'task_point','authour', 'deadline','category', 'track_id']));
+
+        return redirect()->route('posts.index')
+            ->with('success', 'post updated sucessfully!');
     }
 
     /**

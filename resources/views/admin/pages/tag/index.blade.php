@@ -1,17 +1,17 @@
 @extends('admin.template.master')
 @section('body')
 
+
 <div class="row py-lg-2">
-    <div class="col-md-6">
-        <h2>This is Post List</h2>
+    <div class="col-md-6 mt-5">
+        <h2>This is Team List</h2>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 mt-5">
         <a href="{{route('tag.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
     </div>
 
 </div>
-
 <!-- DataTables Example -->
 <div class="card mb-3">
     <div class="card-header">
@@ -72,7 +72,7 @@
             <div class="modal-body">Select "delete" If you realy want to delete this post.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <form method="POST" action="{{route('tag.destroy',['tag'=>$tag->id])}}">
+                <form method="POST" action="">
                     @method('DELETE')
                     @csrf
                     <input type="hidden" id="post_id" name="post_id" value="">

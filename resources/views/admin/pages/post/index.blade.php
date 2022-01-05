@@ -2,11 +2,11 @@
 @section('body')
 
 <div class="row py-lg-2">
-    <div class="col-md-6">
+    <div class="col-md-6 mt-5">
         <h2>This is Post List</h2>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 mt-5">
         <a href="{{route('post.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Post</a>
     </div>
 
@@ -47,7 +47,7 @@
                     <td>{{$user->slug}}</td>
                     <td>{{$user->body}}</td>
                     <td>{{$user->tag_id}}</td>
-                    <td>{{$user->image}}</td>
+                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
                     <td class="text-right">
                         <a href="#" class="btn btn-round btn-info btn-icon btn-sm like"><i class="fas fa-heart"></i></a>
                         <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="far fa-calendar-alt"></i></a>

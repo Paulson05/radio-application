@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 @section('body')
 
-<h1>Create New Post</h1>
+<h5 class="mt-6">Create New Post</h5>
 
 @if ($errors->any())
 <div class="alert alert-danger" role="alert">

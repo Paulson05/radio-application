@@ -55,9 +55,9 @@
                     <td>{{$user->twitter_acc}}</td>
                     <th>{{$user->instagram_acc}}</th>
                     <td class="text-right">
-                        <a href="#" class="btn btn-round btn-info btn-icon btn-sm like"><i class="fas fa-heart"></i></a>
-                        <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="far fa-calendar-alt"></i></a>
-                        <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i></a>
+                        <a href="#" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
+                        <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
+                        <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
                     </td>
                 </tr>
                 @endforeach

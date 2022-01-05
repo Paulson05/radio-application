@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use App\Models\Tags;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -41,7 +42,33 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+//        dd($request->all());
+
+        $this->validate($request,[
+            'title' => 'required',
+            'body' => 'required',
+            'image' => 'required',
+        ]);
+//        $data= $request->all();
+        $data = collect($request->only(['title', 'body', 'image', 'tag_id']))->all();
+//        dd($data);
+        $slug=Str::slug($request->input('title'));
+
+        $slug_count=Post::where('slug', $slug)->count();
+
+        if ($slug_count>0){
+            $slug = time(). '_'.$slug;
+        }
+        $data['slug']=$slug;
+//        return $data;
+        $status=Post::create([$data]);
+
+//        dd($status);
+        if ($status){
+            return redirect()->route('post.index');
+        }
+        return redirect()->back();
     }
 
     /**
