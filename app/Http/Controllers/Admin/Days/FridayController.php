@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin\Days;
 
-use App\Models\Show;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ShowController extends Controller
+class FridayController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ShowController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Show  $show
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Show $show)
+    public function show($id)
     {
         //
     }
@@ -52,10 +52,10 @@ class ShowController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Show  $show
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Show $show)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +64,10 @@ class ShowController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Show  $show
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Show $show)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +75,10 @@ class ShowController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Show  $show
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Show $show)
+    public function destroy($id)
     {
         //
     }

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin\Days;
 
-use App\Models\Monday;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class MondayController extends Controller
+class SaturdayController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class MondayController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Monday  $monday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Monday $monday)
+    public function show($id)
     {
         //
     }
@@ -52,10 +52,10 @@ class MondayController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Monday  $monday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Monday $monday)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +64,10 @@ class MondayController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Monday  $monday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Monday $monday)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +75,10 @@ class MondayController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Monday  $monday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Monday $monday)
+    public function destroy($id)
     {
         //
     }

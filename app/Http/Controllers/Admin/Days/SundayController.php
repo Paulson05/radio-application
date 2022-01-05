@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin\Days;
 
-use App\Models\Sunday;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class SundayController extends Controller
@@ -41,10 +41,10 @@ class SundayController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Sunday  $sunday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Sunday $sunday)
+    public function show($id)
     {
         //
     }
@@ -52,10 +52,10 @@ class SundayController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Sunday  $sunday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Sunday $sunday)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +64,10 @@ class SundayController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Sunday  $sunday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sunday $sunday)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +75,10 @@ class SundayController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Sunday  $sunday
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Sunday $sunday)
+    public function destroy($id)
     {
         //
     }
