@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Days;
 
 use App\Http\Controllers\Controller;
+use App\Models\Friday;
 use Illuminate\Http\Request;
 
 class FridayController extends Controller
@@ -14,17 +15,14 @@ class FridayController extends Controller
      */
     public function index()
     {
-        //
+        $friday = Friday::all();
+        return  view('admin.pages.days.friday.index', ['friday'=>  $friday]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
-        //
+        return  view('admin.pages.days.friday.create');
     }
 
     /**

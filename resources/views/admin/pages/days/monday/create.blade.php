@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 @section('body')
 
-<h5 class="mt-6">Create New Post</h5>
+<h5 class="mt-6">Create show for Monday</h5>
 
 @if ($errors->any())
 <div class="alert alert-danger" role="alert">
@@ -19,8 +19,16 @@
            <form method="POST" action="{{route('tag.store')}}" enctype="multipart/form-data">
                @csrf
                <div class="form-group">
-                   <label for="title">Title</label>
-                   <input type="text" name="title" class="form-control" id="title" placeholder="Title..." value="{{ old('title') }}">
+                   <label for="title">Programme</label>
+                   <input type="text" name="programme" class="form-control" id="title" placeholder="programme..." value="{{ old('programme') }}">
+               </div>
+               <div class="form-group">
+                   <label for="title">Host</label>
+                   <input type="text" name="host" class="form-control" id="title" placeholder="host..." value="{{ old('host') }}">
+               </div>
+               <div class="form-group">
+                   <label for="title">Time</label>
+                   <input type="text" name="time" class="form-control" id="title" placeholder="Time..." value="{{ old('time') }}">
                </div>
 
                <div class="form-group pt-2">

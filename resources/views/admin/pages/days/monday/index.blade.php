@@ -8,7 +8,7 @@
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('tag.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
+        <a href="{{route('monday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
     </div>
 
 </div>
@@ -36,18 +36,18 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($tags as $tag)
+                @foreach($monday as $data)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$tag->title}}</td>
+                    <td>{{$data->title}}</td>
 
                     <td class="text-right">
-                        <a href="{{ route('tag.show', ['tag' =>$tag->id])}}" title="show">
+                        <a href="" title="show">
                             <i class="btn btn-danger fas fa-eye"></i>
                         </a>
 
 
-                        <a href="{{route('tag.edit', ['tag'=>$tag->id])}}" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt"></i></a>
+                        <a href="" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt"></i></a>
                         <a href="#" data-toggle="modal" data-target="#deleteModal" data-postid="{{$tag->id}}"><i class="fas fa-trash-alt">delete</i></a>
                     </td>
                 </tr>

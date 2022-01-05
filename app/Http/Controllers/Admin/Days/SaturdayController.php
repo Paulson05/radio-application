@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Days;
 
 use App\Http\Controllers\Controller;
+use App\Models\Saturday;
 use Illuminate\Http\Request;
 
 class SaturdayController extends Controller
@@ -14,7 +15,8 @@ class SaturdayController extends Controller
      */
     public function index()
     {
-        //
+        $saturday = Saturday::all();
+        return  view('admin.pages.days.saturday.index', ['saturday'=>  $saturday]);
     }
 
     /**
@@ -24,7 +26,7 @@ class SaturdayController extends Controller
      */
     public function create()
     {
-        //
+        return  view('admin.pages.days.saturday.create');
     }
 
     /**

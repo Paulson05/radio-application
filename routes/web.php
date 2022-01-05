@@ -1,6 +1,13 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\Days\FridayController;
+use App\Http\Controllers\Admin\Days\MondayController;
+use App\Http\Controllers\Admin\Days\SaturdayController;
+use App\Http\Controllers\Admin\Days\SundayController;
+use App\Http\Controllers\Admin\Days\ThursdayController;
+use App\Http\Controllers\Admin\Days\TuesdayController;
+use App\Http\Controllers\Admin\Days\WednesdayController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\TagController;
@@ -36,6 +43,13 @@ Route::get('/login',  [AdminController::class, 'getLogin'])->name('admin.get.log
 Route::post('/post/login',  [AdminController::class, 'postLogin'])->name('admin.post.login');
 
 Route::resource('team', TeamController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('monday', MondayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('tuesday', TuesdayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('wednesday', WednesdayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('thursday', ThursdayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('friday', FridayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('saturday', SaturdayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('sunday', SundayController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
 
 
 Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit','create'  ]);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Days;
 
 use App\Http\Controllers\Controller;
+use App\Models\Thursday;
 use Illuminate\Http\Request;
 
 class ThursdayController extends Controller
@@ -14,7 +15,8 @@ class ThursdayController extends Controller
      */
     public function index()
     {
-        //
+        $thursday = Thursday::all();
+        return  view('admin.pages.days.thursday.index', ['thursday'=>  $thursday]);
     }
 
     /**
@@ -24,7 +26,7 @@ class ThursdayController extends Controller
      */
     public function create()
     {
-        //
+        return  view('admin.pages.days.thursday.create');
     }
 
     /**

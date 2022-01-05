@@ -8,7 +8,7 @@
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('tag.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
+        <a href="{{route('tuesday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
     </div>
 
 </div>
@@ -36,7 +36,7 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($tags as $tag)
+                @foreach($tuesday as $tag)
                 <tr>
                     <td>{{$loop->iteration}}</td>
                     <td>{{$tag->title}}</td>

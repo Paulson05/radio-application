@@ -5,7 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Wenesday extends Model
+class Wednesday extends Model
 {
     use HasFactory;
+
+    protected  $table = 'wednesdays';
+    protected  $guarded = [];
 }
