@@ -14,7 +14,10 @@ class CreateSaturdaysTable extends Migration
     public function up()
     {
         Schema::create('saturdays', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('programme');
+            $table->string('host');
+            $table->string('time');
             $table->timestamps();
         });
     }
