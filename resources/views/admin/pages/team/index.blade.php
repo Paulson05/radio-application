@@ -45,17 +45,17 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($teams as $user)
+                @foreach($teams as $team)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$user->name}}</td>
-                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
-                    <td>{{$user->job_title}}</td>
-                    <td>{{$user->facebook_acc}}</td>
-                    <td>{{$user->twitter_acc}}</td>
-                    <th>{{$user->instagram_acc}}</th>
+                    <td>{{$team->name}}</td>
+                    <td><img src="{{$team->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <td>{{$team->job_title}}</td>
+                    <td>{{$team->facebook_acc}}</td>
+                    <td>{{$team->twitter_acc}}</td>
+                    <th>{{$team->instagram_acc}}</th>
                     <td class="text-right">
-                        <a href="#" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
+                        <a href="{{route('team.edit', ['team'=> $team->id])}}" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
                         <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
                         <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
                     </td>
