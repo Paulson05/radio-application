@@ -89,9 +89,9 @@ class TeamController extends Controller
 
     public function update(Request $request, Team  $team)
     {
-        $team->update($request->only(['title_heading', 'title_body','task_title', 'task_point','authour', 'deadline','category', 'track_id']));
+        $team->update($request->only(['name', 'job_title','facebook_acc', 'twitter_acc', 'instagram_acc']));
 
-        return redirect()->route('posts.index')
+        return redirect()->route('team.index')
             ->with('success', 'post updated sucessfully!');
     }
 
