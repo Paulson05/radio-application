@@ -56,7 +56,7 @@
                     <th>{{$team->instagram_acc}}</th>
                     <td class="text-right">
                         <a href="{{route('team.edit', ['team'=> $team->id])}}" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
-                        <a href="{{route('team.show', ['team'=> $team->id])}}" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
+                        <a href="{{route('team.show', ['team'=> $team->id])}}" class="btn btn-round "><i class="fa fa-calendar-alt">show</i></a>
                         <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
                     </td>
                 </tr>

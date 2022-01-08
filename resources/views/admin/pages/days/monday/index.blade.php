@@ -1,17 +1,17 @@
 @extends('admin.template.master')
 @section('body')
 
-
 <div class="row py-lg-2">
     <div class="col-md-6 mt-5">
         <h2>This is Team List</h2>
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('monday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create Monday prgrammes</a>
+        <a href="{{route('tuesday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create AOP</a>
     </div>
 
 </div>
+
 <!-- DataTables Example -->
 <div class="card mb-3">
     <div class="card-header">
@@ -22,39 +22,38 @@
             <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Title</th>
+                    <th>Id</th>
+                    <th style="font-size: 12px; !important;">Name of programme</th>
+                    <th style="font-size: 12px; !important;">Name of host</th>
+                    <th style="font-size: 12px; !important;">image</th>
+                    <th style="font-size: 12px; !important;">Time</th>
+
+
                     <th class="disabled-sorting text-right">Actions</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
-                    <th>ID</th>
-                    <th>Programme</th>
-                    <th>host</th>
+                    <th>Id</th>
+                    <th >Name of programme</th>
+                    <th>Name of host</th>
                     <th>image</th>
-                    <th>time</th>
-
+                    <th>Time</th>
                     <th class="disabled-sorting text-right">Actions</th>
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($monday as $data)
+                @foreach($monday as $user)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$data->programme}}</td>
-                    <td>{{$data->host}}</td>
-                    <td><img src="{{$data->image}}" style="max-height: 90px; max-width: 50px;"></td>
-                    <td>{{$data->time}}</td>
-
+                    <td>{{$user->programme}}</td>
+                    <td>{{$user->host}}</td>
+                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <th>{{$user->time}}</th>
                     <td class="text-right">
-                        <a href="" title="show">
-                            <i class="btn btn-danger fas fa-eye"></i>
-                        </a>
-
-
-                        <a href="" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt"></i></a>
-                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-postid="{{$data->id}}"><i class="fas fa-trash-alt">delete</i></a>
+                        <a href="#" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
+                        <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
+                        <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
                     </td>
                 </tr>
                 @endforeach
@@ -78,7 +77,7 @@
             <div class="modal-body">Select "delete" If you realy want to delete this post.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <form method="POST" action="">
+                <form method="POST" action="/posts/">
                     @method('DELETE')
                     @csrf
                     <input type="hidden" id="post_id" name="post_id" value="">
