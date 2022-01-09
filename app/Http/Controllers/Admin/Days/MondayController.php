@@ -57,9 +57,9 @@ class MondayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Monday $monday)
     {
-        //
+        return view ('admin.pages.days.monday.show', ['monday'=> $monday]);
     }
 
     /**
@@ -68,9 +68,9 @@ class MondayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Monday $monday)
     {
-        //
+        return view ('admin.pages.days.monday.show', ['monday'=> $monday]);
     }
 
     /**
