@@ -15,8 +15,8 @@ class MondayController extends Controller
      */
     public function index()
     {
-         $monday = Monday::all();
-        return  view('admin.pages.days.monday.index', ['monday'=> $monday]);
+         $mondays = Monday::all();
+        return  view('admin.pages.days.monday.index', ['mondays'=> $mondays]);
     }
 
     /**
@@ -70,7 +70,7 @@ class MondayController extends Controller
      */
     public function edit(Monday $monday)
     {
-        return view ('admin.pages.days.monday.show', ['monday'=> $monday]);
+        return view ('admin.pages.days.monday.edit', ['monday'=> $monday]);
     }
 
     /**
@@ -80,9 +80,12 @@ class MondayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Monday $monday)
     {
-        //
+        $monday->update($request->only(['programme', 'host','time', 'image']));
+
+        return redirect()->route('monday.index')
+            ->with('success', 'post updated sucessfully!');
     }
 
     /**

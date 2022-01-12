@@ -43,16 +43,16 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($monday as $user)
+                @foreach($mondays as $monday)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$user->programme}}</td>
-                    <td>{{$user->host}}</td>
-                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
-                    <th>{{$user->time}}</th>
+                    <td>{{$monday->programme}}</td>
+                    <td>{{$monday->host}}</td>
+                    <td><img src="{{$monday->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <th>{{$monday->time}}</th>
                     <td class="text-right">
-                        <a href="{{route('monday.edit', ['monday'=>$monday->id])}}" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
-                        <a href="{{route('monday.show', ['monday'=>$monday->id] )}}" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
+                        <a href="{{route('monday.edit', ['monday'=>$monday->id])}}" class="btn btn-round"><i class="fas fa-clock" style="color: red;"></i>edit</a>
+                        <a href="{{route('monday.show', ['monday'=>$monday->id] )}}" class="btn btn-round "><i class="fa fa-calendar-alt">show</i></a>
                         <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
                     </td>
                 </tr>
