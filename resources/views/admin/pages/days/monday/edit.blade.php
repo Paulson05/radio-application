@@ -19,15 +19,15 @@
 
     <div class="form-group">
         <label for="role_name">programme name</label>
-        <input type="text" name="name" class="form-control" id="role_name" value="{{$monday->programme}}" required>
+        <input type="text" name="programme" class="form-control" id="role_name" value="{{$monday->programme}}" required>
     </div>
     <div class="form-group">
         <label for="role_slug">Host name</label>
-        <input type="text" name="job_title" tag="role_slug" class="form-control" id="role_slug"  value="{{$monday->host}}" required>
+        <input type="text" name="host" tag="role_slug" class="form-control" id="role_slug"  value="{{$monday->host}}" required>
     </div>
     <div class="form-group" >
         <label for="roles_permissions">Programme time</label>
-        <input type="text"  name="roles_permissions" class="form-control"  value="{{$monday->time}}" required>
+        <input type="text"  name="time" class="form-control"  value="{{$monday->time}}" required>
 
     </div>
 
