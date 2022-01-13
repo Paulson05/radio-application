@@ -15,8 +15,8 @@ class TuesdayController extends Controller
      */
     public function index()
     {
-        $tuesday = Tuesday::all();
-        return  view('admin.pages.days.tuesday.index', ['tuesday'=>  $tuesday]);
+        $tuesdays = Tuesday::all();
+        return  view('admin.pages.days.tuesday.index', ['tuesdays'=>  $tuesdays]);
     }
 
     /**
@@ -57,9 +57,9 @@ class TuesdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Tuesday $tuesday)
     {
-        //
+        return view('admin.pages.days.tuesday.show', ['tuesday'=> $tuesday]);
     }
 
     /**
@@ -68,9 +68,9 @@ class TuesdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Tuesday $tuesday)
     {
-        //
+          return view('admin.pages.days.tuesday.edit', ['tuesday'=>$tuesday]);
     }
 
     /**
@@ -80,9 +80,12 @@ class TuesdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Tuesday $tuesday)
     {
-        //
+        $tuesday->update($request->only(['programme', 'host','time', 'image']));
+
+        return redirect()->route('tuesday.index')
+            ->with('success', 'post updated sucessfully!');
     }
 
     /**

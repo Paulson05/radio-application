@@ -7,7 +7,7 @@
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('team.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create AOP</a>
+        <a href="{{route('tuesday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create Teusday programme</a>
     </div>
 
 </div>
@@ -43,16 +43,16 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($tuesday as $user)
+                @foreach($tuesdays as $tuesday)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$user->programme}}</td>
-                    <td>{{$user->host}}</td>
-                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
-                    <th>{{$user->time}}</th>
+                    <td>{{$tuesday->programme}}</td>
+                    <td>{{$tuesday->host}}</td>
+                    <td><img src="{{$tuesday->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <th>{{$tuesday->time}}</th>
                     <td class="text-right">
-                        <a href="#" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
-                        <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
+                        <a href="{{route('tuesday.edit', ['tuesday'=>$tuesday->id])}}" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
+                        <a href="{{route('tuesday.show', ['tuesday'=>$tuesday->id])}}" class="btn btn-round btn-warning "><i class="fa fa-calendar-alt">show</i></a>
                         <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
                     </td>
                 </tr>
