@@ -7,7 +7,7 @@
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('team.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create AOP</a>
+        <a href="{{route('thursday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create Thursday programme</a>
     </div>
 
 </div>

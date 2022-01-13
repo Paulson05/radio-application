@@ -15,8 +15,8 @@ class FridayController extends Controller
      */
     public function index()
     {
-        $friday = Friday::all();
-        return  view('admin.pages.days.friday.index', ['friday'=>  $friday]);
+        $fridays = Friday::all();
+        return  view('admin.pages.days.friday.index', ['fridays'=>  $fridays]);
     }
 
 
@@ -53,20 +53,15 @@ class FridayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Friday $friday)
     {
-        //
+        return view('admin.pages.days.friday.show', ['friday'=>$friday]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+
+    public function edit(Friday $friday)
     {
-        //
+        return view('admin.pages.days.friday.edit', ['friday'=>$friday]);
     }
 
     /**
@@ -76,9 +71,10 @@ class FridayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Friday $friday)
     {
-        //
+        $friday->update($request->only(['host', 'programme','time', 'image']));
+        return redirect()->route('friday.index')->with('success', 'programme updated successfully');
     }
 
     /**
