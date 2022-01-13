@@ -16,8 +16,8 @@ class SundayController extends Controller
      */
     public function index()
     {
-        $sunday = Sunday::all();
-        return  view('admin.pages.days.sunday.index', ['sunday'=>  $sunday]);
+        $sundays = Sunday::all();
+        return  view('admin.pages.days.sunday.index', ['sundays'=>  $sundays]);
     }
 
     /**
@@ -61,7 +61,7 @@ class SundayController extends Controller
 
     public function edit( Sunday $sunday)
     {
-        return view('admin.pages.days.saturday.edit', ['sunday'=>$sunday]);
+        return view('admin.pages.days.sunday.edit', ['sunday'=>$sunday]);
     }
 
 

@@ -1,7 +1,7 @@
 @extends('admin.template.master')
 @section('body')
 
-<h1>Create New Post</h1>
+<h1>Update the Role</h1>
 
 @if ($errors->any())
 <div class="alert alert-danger" role="alert">
@@ -13,28 +13,50 @@
 </div>
 @endif
 
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <form method="POST" action="{{route('tag.update', ['tag'=>$tag->id])}}" enctype="multipart/form-data">
-                @method('PUT')
-                @csrf
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" class="form-control" value="{{ $tag->title }}" >
-                </div>
+<form method="POST" action="{{ route('sunday.update', ['sunday'=>$sunday->id]) }}">
+    @csrf
+    @method('PATCH')
 
-                <div class="form-group pt-2">
-                    <input class="btn btn-primary" type="submit" value="Submit">
-                </div>
-            </form>
-        </div>
+    <div class="form-group">
+        <label for="role_name">programme name</label>
+        <input type="text" name="programme" class="form-control" id="role_name" value="{{$sunday->programme}}" required>
+    </div>
+    <div class="form-group">
+        <label for="role_slug">Host name</label>
+        <input type="text" name="host" tag="role_slug" class="form-control" id="role_slug"  value="{{$sunday->host}}" required>
+    </div>
+    <div class="form-group" >
+        <label for="roles_permissions">Programme time</label>
+        <input type="text"  name="time" class="form-control"  value="{{$sunday->time}}" required>
 
     </div>
-</div>
+
+
+    <div class="form-group pt-2">
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+</form>
+
+@section('css_role_page')
+<link rel="stylesheet" href="/css/admin/bootstrap-tagsinput.css">
+@endsection
+
+@section('js_role_page')
+<script src="/js/admin/bootstrap-tagsinput.js"></script>
 
 <script>
-    CKEDITOR.replace( 'post_content' );
+
+    $(document).ready(function(){
+        $('#role_name').keyup(function(e){
+            var str = $('#role_name').val();
+            str = str.replace(/\W+(?!$)/g, '-').toLowerCase();//rplace stapces with dash
+            $('#role_slug').val(str);
+            $('#role_slug').attr('placeholder', str);
+        });
+    });
+
 </script>
+
+@endsection
 
 @endsection
