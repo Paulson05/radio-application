@@ -15,8 +15,8 @@ class WednesdayController extends Controller
      */
     public function index()
     {
-        $wednesday = Wednesday::all();
-        return  view('admin.pages.days.wednesday.index', ['wednesday'=>  $wednesday]);
+        $wednesdays = Wednesday::all();
+        return  view('admin.pages.days.wednesday.index', ['wednesdays'=>  $wednesdays]);
     }
 
     /**
@@ -57,9 +57,9 @@ class WednesdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Wednesday $wednesday)
     {
-        //
+        return  view('admin.pages.days.wednesday.show',['wednesday'=>$wednesday]);
     }
 
     /**
@@ -68,9 +68,9 @@ class WednesdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Wednesday $wednesday)
     {
-        //
+        return view('admin.pages.days.wednesday.edit',['wednesday'=>$wednesday]);
     }
 
     /**
@@ -80,9 +80,11 @@ class WednesdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Wednesday $wednesday)
     {
-        //
+        $wednesday->update($request->only(['programme', 'host','time', 'image']));
+        return redirect()->route('wednesday.index')
+            ->with('success', 'post updated sucessfully!');
     }
 
     /**

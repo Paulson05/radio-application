@@ -1,22 +1,46 @@
 @extends('admin.template.master')
 @section('body')
+<div class="container-fluid">
 
-<div class="container">
-    <div class="card">
-        <div class="card-header">
-            <h3>Name: {{$tag['title']}}</h3>
+    <div class="row">
 
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Permissions</h5>
-            <p class="card-text">
-                ...........
-            </p>
-        </div>
-        <div class="card-footer">
-            <a href="{{ url()->previous() }}" class="btn btn-primary">Go Back</a>
+        <div class="col-md-12">
+
+            <div class="card card-user">
+                <div class="image">
+                    <img src="{{asset('backend/assets/img/bg5.jpg')}}" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="author">
+                        <a href="#">
+                            <img class="avatar border-gray" src="{{$thursday->image}}" alt="...">
+                            <h5 class="title">{{$thursday->programme}}</h5>
+                        </a>
+                        <p class="description">
+                            {{$thursday->host}}
+                        </p>
+                    </div>
+                    <p class="description text-center">
+                        {{$thursday->time}}
+                    </p>
+
+                </div>
+                <hr>
+                <div class="button-container">
+                    <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                        <i class="fab fa-facebook-square"></i>
+                    </button>
+                    <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                        <i class="fab fa-google-plus-square"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 
 @endsection

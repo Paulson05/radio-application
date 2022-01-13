@@ -15,8 +15,8 @@ class ThursdayController extends Controller
      */
     public function index()
     {
-        $thursday = Thursday::all();
-        return  view('admin.pages.days.thursday.index', ['thursday'=>  $thursday]);
+        $thursdays = Thursday::all();
+        return  view('admin.pages.days.thursday.index', ['thursdays'=>  $thursdays]);
     }
 
     /**
@@ -57,32 +57,23 @@ class ThursdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Thursday $thursday)
     {
-        //
+        return view('admin.pages.days.thursday.show', ['thursday'=>$thursday]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+
+    public function edit(Thursday $thursday)
     {
-        //
+        return view('admin.pages.days.thursday.edit', ['thursday'=>$thursday]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+    public function update(Request $request, Thursday $thursday)
     {
-        //
+        $thursday->update($request->only(['host','programme','time', 'image']));
+
+        return view('thursday.index')->with('success', 'programme added succcessfully');
     }
 
     /**
