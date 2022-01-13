@@ -7,7 +7,7 @@
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('saturday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create AOP</a>
+        <a href="{{route('saturday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create Saturday Programme</a>
     </div>
 
 </div>
@@ -43,17 +43,17 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($saturday as $user)
+                @foreach($saturdays as $saturday)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$user->programme}}</td>
-                    <td>{{$user->host}}</td>
-                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
-                    <th>{{$user->time}}</th>
+                    <td>{{$saturday->programme}}</td>
+                    <td>{{$saturday->host}}</td>
+                    <td><img src="{{$saturday->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <th>{{$saturday->time}}</th>
                     <td class="text-right">
-                        <a href="#" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
-                        <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="fa fa-calendar-alt">show</i></a>
-                        <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
+                        <a href="{{route('saturday.edit', ['saturday'=>$saturday->id])}}" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
+                        <a href="{{route('saturday.show', ['saturday'=>$saturday->id])}}" class="btn btn-round btn-warning"><i class="fa fa-calendar-alt">show</i></a>
+                        <a href="#" class="btn btn-round btn-danger "><i class="fas fa-times"></i>delete</a>
                     </td>
                 </tr>
                 @endforeach

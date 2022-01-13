@@ -15,8 +15,8 @@ class SaturdayController extends Controller
      */
     public function index()
     {
-        $saturday = Saturday::all();
-        return  view('admin.pages.days.saturday.index', ['saturday'=>  $saturday]);
+        $saturdays = Saturday::all();
+        return  view('admin.pages.days.saturday.index', ['saturdays'=>  $saturdays]);
     }
 
     /**
@@ -57,32 +57,24 @@ class SaturdayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+
+    public function show(Saturday $saturday)
     {
-        //
+        return view('admin.pages.days.saturday.show', ['saturday'=>$saturday]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+
+    public function edit( Saturday $saturday)
     {
-        //
+        return view('admin.pages.days.saturday.edit', ['saturday'=>$saturday]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+    public function update(Request $request, Saturday $saturday)
     {
-        //
+        $saturday->update($request->only(['programme', 'host', 'time', 'image']));
+
+        return redirect()->route('saturday.index')->with('success', 'programme updated successfully');
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Days;
 
 use App\Http\Controllers\Controller;
+use App\Models\Saturday;
 use App\Models\Sunday;
 use Illuminate\Http\Request;
 
@@ -51,38 +52,24 @@ class SundayController extends Controller
         return redirect()->back();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+
+    public function show(Sunday $sunday)
     {
-        //
+        return view('admin.pages.days.sunday.show', ['sunday'=>$sunday]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+
+    public function edit( Sunday $sunday)
     {
-        //
+        return view('admin.pages.days.saturday.edit', ['sunday'=>$sunday]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+    public function update(Request $request, Sunday $sunday)
     {
-        //
+        $sunday->update($request->only(['programme', 'host', 'time', 'image']));
+
+        return redirect()->route('sunday.index');
     }
 
     /**
