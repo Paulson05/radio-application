@@ -53,7 +53,13 @@
                     <td class="text-right">
                         <a href="{{route('monday.edit', ['monday'=>$monday->id])}}" class="btn btn-round"><i class="fas fa-clock" style="color: red;"></i>edit</a>
                         <a href="{{route('monday.show', ['monday'=>$monday->id] )}}" class="btn btn-round "><i class="fa fa-calendar-alt">show</i></a>
-                        <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
+
+                        <form style="display: inline-block" method="post" action="{{route('monday.destroy', ['monday'=>$monday->id])}}" >
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm p-0"><i class="" ></i>delete</button>
+                        </form>
+
                     </td>
                 </tr>
                 @endforeach

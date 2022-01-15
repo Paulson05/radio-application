@@ -78,8 +78,9 @@ class SundayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Sunday $sunday)
     {
-        //
+        $sunday->delete();
+        return redirect()->back();
     }
 }

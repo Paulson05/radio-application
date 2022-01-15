@@ -57,7 +57,11 @@
                     <td class="text-right">
                         <a href="{{route('team.edit', ['team'=> $team->id])}}" class=""><i class="fas fa-clock" style="color: red;"></i>edit</a>
                         <a href="{{route('team.show', ['team'=> $team->id])}}" class="btn btn-round "><i class="fa fa-calendar-alt">show</i></a>
-                        <a href="{{route('team.destroy', ['team'=>$team->id])}}" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i>delete</a>
+                        <form style="display: inline-block" method="post" action="{{route('team.destroy', ['team'=>$team->id])}}" >
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm p-0"><i class="" ></i>delete</button>
+                        </form>
                     </td>
                 </tr>
                 @endforeach
