@@ -3,11 +3,11 @@
 
 <div class="row py-lg-2">
     <div class="col-md-6 mt-5">
-        <h2>This is Team List</h2>
+        <h2>Monday programme</h2>
     </div>
 
     <div class="col-md-6 mt-5">
-        <a href="{{route('tuesday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create AOP</a>
+        <a href="{{route('tuesday.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create Monday programme</a>
     </div>
 
 </div>

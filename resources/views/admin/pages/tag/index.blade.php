@@ -4,9 +4,8 @@
 
 <div class="row py-lg-2">
     <div class="col-md-6 mt-5">
-        <h2>This is Team List</h2>
+        <button class="btn btn-primary btn-lg float-md-left" role="button" aria-pressed="true">List of tag</button>
     </div>
-
     <div class="col-md-6 mt-5">
         <a href="{{route('tag.create')}}" class="btn btn-primary btn-lg float-md-right" role="button" aria-pressed="true">Create New Tag</a>
     </div>
@@ -43,12 +42,16 @@
 
                     <td class="text-right">
                         <a href="{{ route('tag.show', ['tag' =>$tag->id])}}" title="show">
-                            <i class="btn btn-danger fas fa-eye"></i>
+                            show</i>
                         </a>
 
 
-                        <a href="{{route('tag.edit', ['tag'=>$tag->id])}}" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt"></i></a>
-                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-postid="{{$tag->id}}"><i class="fas fa-trash-alt">delete</i></a>
+                        <a href="{{route('tag.edit', ['tag'=>$tag->id])}}" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt">edit</i></a>
+                        <form style="display: inline-block" method="post" action="{{route('tag.destroy', ['tag'=>$tag->id])}}" >
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm p-0"><i class="" ></i>delete</button>
+                        </form>
                     </td>
                 </tr>
                 @endforeach
