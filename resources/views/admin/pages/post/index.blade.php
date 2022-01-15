@@ -3,7 +3,7 @@
 
 <div class="row py-lg-2">
     <div class="col-md-6 mt-5">
-        <h2>This is Post List</h2>
+        <button class="btn btn-primary btn-lg float-md-left" role="button" aria-pressed="true">List of Post</button>
     </div>
 
     <div class="col-md-6 mt-5">
@@ -41,17 +41,21 @@
                 </tr>
                 </tfoot>
                 <tbody>
-                @foreach($posts as $user)
+                @foreach($posts as $post)
                 <tr>
-                    <td>{{$user->title}}</td>
-                    <td>{{$user->slug}}</td>
-                    <td>{{$user->body}}</td>
-                    <td>{{$user->tag_id}}</td>
-                    <td><img src="{{$user->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <td>{{$post->title}}</td>
+                    <td>{{$post->slug}}</td>
+                    <td>{{$post->body}}</td>
+                    <td>{{$post->tag_id}}</td>
+                    <td><img src="{{$post->image}}" style="max-height: 90px; max-width: 50px;"></td>
                     <td class="text-right">
-                        <a href="#" class="btn btn-round btn-info btn-icon btn-sm like"><i class="fas fa-heart"></i></a>
-                        <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit"><i class="far fa-calendar-alt"></i></a>
-                        <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove"><i class="fas fa-times"></i></a>
+                        <a href="{{route('post.edit',['post'=>$post->id])}}" class="btn btn-round btn-info "><i class="fas fa-heart">edit</i></a>
+                        <a href="{{route('post.show', ['post'=>$post->id])}}" class="btn btn-round ">show<i class="far fa-calendar-alt"></i></a>
+                        <form style="display: inline-block" method="post" action="{{route('post.destroy', ['post'=>$post->id])}}" >
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm p-0"><i class="" ></i>delete</button>
+                        </form>
                     </td>
                 </tr>
                 @endforeach
