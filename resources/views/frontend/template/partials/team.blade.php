@@ -8,11 +8,15 @@
             </div>
         </div>
         <div class="row">
+            @php
+            $teams = \App\Models\Team::all();
+            @endphp
             <div class="col-lg-12">
                 <div class="team-slider slider-arrow">
+                    @foreach($teams as $team)
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="{{asset('assets/img/team-1.jpg')}}" alt="team-1">
+                            <img src="{{$team->image}}"   alt="team-1">
                             <div class="team-overlay">
                                 <ul class="team-icon">
                                     <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -22,73 +26,11 @@
                             </div>
                         </div>
                         <div class="team-meta">
-                            <h4>Miron Mahmud</h4>
-                            <p>Radio Jockey</p>
+                            <h4>{{$team->name}}</h4>
+                            <p>{{$team->jod_titile}}</p>
                         </div>
                     </div>
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="{{asset('assets/img/team-2.jpg')}}" alt="team-2">
-                            <div class="team-overlay">
-                                <ul class="team-icon">
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-meta">
-                            <h4>Tahmina Bonny</h4>
-                            <p>Radio Jockey</p>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="{{asset('assets/img/team-3.jpg')}}" alt="team-3">
-                            <div class="team-overlay">
-                                <ul class="team-icon">
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-meta">
-                            <h4>Rocky Jonson</h4>
-                            <p>Music Composer</p>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="team-img"><img src="{{asset('assets/img/team-4.jpg')}}" alt="team-4">
-                            <div class="team-overlay">
-                                <ul class="team-icon">
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-meta">
-                            <h4>Miron Mahmud</h4>
-                            <p>Radio Jockey</p>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img src="{{asset('assets/img/team-5.jpg')}}" alt="team-1">
-                            <div class="team-overlay">
-                                <ul class="team-icon">
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="icon icon-inline" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-meta">
-                            <h4>Miron Mahmud</h4>
-                            <p>Radio Jockey</p>
-                        </div>
-                    </div>
+                   @endforeach
                 </div>
             </div>
         </div>

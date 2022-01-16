@@ -19,7 +19,7 @@ class PostController extends Controller
     {
         $posts = Post::with(['tags'])->get();
 
-//        dd($posts);
+        dd($posts);
         return view('admin.pages.post.index',['posts'=> $posts] );
     }
 
