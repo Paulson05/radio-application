@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tags;
 use Illuminate\Http\Request;
@@ -31,7 +32,8 @@ class PostController extends Controller
     public function create()
     {
         $tags = Tags::all();
-        return view('admin.pages.post.create', ['tags'=>$tags] );
+        $categories = Category::all();
+        return view('admin.pages.post.create', ['tags'=>$tags, 'categories' => $categories  ] );
     }
 
     /**

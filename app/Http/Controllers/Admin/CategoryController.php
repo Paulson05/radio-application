@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Tags;
+use App\Models\Category;
 use Illuminate\Http\Request;
-use phpDocumentor\Reflection\DocBlock\Tag;
 
-class TagController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,8 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tags = Tags::all();
-        return view('admin.pages.tag.index', ['tags' => $tags]);
+        $categories = Category::all();
+        return view('admin.pages.category.index', ['categories'=> $categories]);
     }
 
     /**
@@ -27,7 +26,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.tag.create' );
+        return view('admin.pages.category.create');
     }
 
     /**
@@ -42,9 +41,8 @@ class TagController extends Controller
             'title' => 'required'
         ]));
         $array = collect($request->only(['title']))->all();
-        Tags::create($array);
-        return redirect()->route('tag.create')->with('success', 'Tag Created Successfully!');
-
+        Category::create($array);
+        return redirect()->route('category.index')->with('success', 'category Created Successfully!');
     }
 
     /**
@@ -53,11 +51,9 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Tags $tag)
+    public function show($id)
     {
-        return view('admin.pages.tag.show', ['tag' => $tag]);
-
-
+        //
     }
 
     /**
@@ -66,9 +62,9 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tags $tag)
+    public function edit($id)
     {
-        return view('admin.pages.tag.edit', ['tag' => $tag]);
+        //
     }
 
     /**
@@ -78,12 +74,9 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tags $tag)
+    public function update(Request $request, $id)
     {
-        $tag->update($request->only(['title']));
-
-        return redirect()->route('tag.index', ['tag'=> $tag])
-            ->with('success', 'track updated sucessfully!');
+        //
     }
 
     /**
@@ -92,10 +85,8 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, Tags $tag)
+    public function destroy($id)
     {
-
-        $tag->delete();
-        return redirect()->back();
+        //
     }
 }

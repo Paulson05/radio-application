@@ -13,6 +13,11 @@
 </div>
 @endif
 
+@if(Session::has('success'))
+<p class="text-success">{{session('success')}}</p>
+@endif
+
+
 <div class="container">
     <div class="card">
         <div class="card-body">
@@ -29,6 +34,17 @@
                         @foreach($tags as $tag)
 
                         <option value="{{$tag->id}}">{{$tag->title}}</option>
+                        @endforeach
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label><strong>Tags:</strong></label><br>
+                    <select name="category" id="cars"  class="form-control custom-select">
+                        <!--                        <select name="name[]" id="cars" multiple class="form-control custom-select">-->
+                        @foreach($categories as $cat)
+
+                        <option value="{{$cat->id}}">{{$cat->title}}</option>
                         @endforeach
                     </select>
 

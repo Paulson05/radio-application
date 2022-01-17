@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\Days\FridayController;
 use App\Http\Controllers\Admin\Days\MondayController;
 use App\Http\Controllers\Admin\Days\SaturdayController;
@@ -53,6 +54,8 @@ Route::resource('sunday', SundayController::class)->only(['index','store','show'
 
 
 Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+Route::resource('category', CategoryController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
+
 Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
 Route::resource('users', UsersController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
 Route::resource('roles', RolesController::class)->only(['index','store','show','update','destroy','edit','create'  ]);

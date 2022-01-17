@@ -79,6 +79,17 @@
         </a>
 
     </li>
+    <li  class="{{ Route::currentRouteNamed('category.index') ? 'active' : '' }}" >
+
+
+        <a href="{{route('category.index')}}">
+
+            <i class="now-ui-icons design_app"></i>
+
+            <p>Category</p>
+        </a>
+
+    </li>
     <li >
 
 
