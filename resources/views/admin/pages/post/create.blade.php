@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label><strong>Tags:</strong></label><br>
-                    <select name="tag_id[]" id="cars"  class="form-control custom-select">
+                    <select name="tag_id" id="cars"  class="form-control custom-select">
 <!--                        <select name="name[]" id="cars" multiple class="form-control custom-select">-->
                         <option value="">selete tag</option>
                         @foreach($tags as $tag)
@@ -39,8 +39,8 @@
 
                 </div>
                 <div class="form-group">
-                    <label><strong>Tags:</strong></label><br>
-                    <select name="categories_id[]" id="cars"  class="form-control custom-select">
+                    <label><strong>CATEGORY:</strong></label><br>
+                    <select name="categories_id" id="cars"  class="form-control custom-select">
                         <!--                        <select name="name[]" id="cars" multiple class="form-control custom-select">-->
                         <option value="">selete category</option>
                         @foreach($categories as $cat)
@@ -51,18 +51,7 @@
 
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <label>image</label>
-                        <div class="input-group">
-                                               <span class="input-group-btn">
-                                                 <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                                                   <i class="fa fa-picture-o"></i> Choose
-                                                 </a>
-                                               </span>
-                            <input id="thumbnail"  class="form-control" type="text" name="image">
-                        </div>
-                        <div id="holder"  style="margin-top:15px;max-height:200px;"></div>
-                    </div>
+                    <input type="file" name="image" />
                 </div>
                 <div class="form-group">
                     <label for="title">Body</label>
