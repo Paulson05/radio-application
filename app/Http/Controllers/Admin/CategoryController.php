@@ -38,30 +38,19 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, ([
-            'title' => 'required'
+            'name' => 'required'
         ]));
-        $array = collect($request->only(['title']))->all();
+        $array = collect($request->only(['name']))->all();
         Category::create($array);
         return redirect()->route('category.index')->with('success', 'category Created Successfully!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+
+    public function show(Category $cat)
     {
-        //
+        return view('admin.pages.category.show', ['cat'=> $cat]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         //

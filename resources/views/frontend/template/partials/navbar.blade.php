@@ -17,11 +17,8 @@
                         <li class="navbar-item {{ Route::currentRouteNamed('frontend.team') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.team')}}"><span><i class="fas fa-headphones-alt"></i>Aops</span></a>
 
                         </li>
-                        <li class="navbar-item navbar-dropdown"><a class="navbar-link" href="#"><span><i class="fas fa-headphones-alt"></i>blogs</span><small class="fas fa-chevron-down"></small></a>
-                            <ul class="dropdown-list">
-                                <li><a class="dropdown-link" href="blog-list.html">Blog list</a></li>
-                                <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
-                            </ul>
+                        <li class="navbar-item "><a class="navbar-link {{ Route::currentRouteNamed('blog.list') ? 'active' : '' }} " href="{{route('blog.list')}}"><span><i class="fas fa-headphones-alt"></i>blogs</span></a>
+
                         </li>
                         <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.contactus')}}"><span><i class="fas fa-headphones-alt"></i>Contact us</span></a></li>
                     </ul>

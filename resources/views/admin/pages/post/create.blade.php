@@ -31,8 +31,8 @@
                     <label><strong>Tags:</strong></label><br>
                     <select name="tag_id[]" id="cars"  class="form-control custom-select">
 <!--                        <select name="name[]" id="cars" multiple class="form-control custom-select">-->
+                        <option value="">selete tag</option>
                         @foreach($tags as $tag)
-
                         <option value="{{$tag->id}}">{{$tag->title}}</option>
                         @endforeach
                     </select>
@@ -40,11 +40,12 @@
                 </div>
                 <div class="form-group">
                     <label><strong>Tags:</strong></label><br>
-                    <select name="category" id="cars"  class="form-control custom-select">
+                    <select name="categories_id[]" id="cars"  class="form-control custom-select">
                         <!--                        <select name="name[]" id="cars" multiple class="form-control custom-select">-->
+                        <option value="">selete category</option>
                         @foreach($categories as $cat)
 
-                        <option value="{{$cat->id}}">{{$cat->title}}</option>
+                        <option value="{{$cat->id}}">{{$cat->name}}</option>
                         @endforeach
                     </select>
 

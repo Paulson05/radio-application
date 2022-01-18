@@ -18,3 +18,11 @@
 <link rel="stylesheet" href="{{asset('assets/css/custom/index.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/custom/team.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/custom/contact.css')}}">
+
+<link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="{{asset('css/vendor/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/custom/main.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/custom/blog-list.css')}}">
+
+<link rel="stylesheet" href="{{asset('assets/css/custom/main.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/custom/blog-details.css')}}">

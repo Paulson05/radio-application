@@ -38,16 +38,16 @@
                 @foreach($categories as $cat)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$cat->title}}</td>
+                    <td>{{$cat->name}}</td>
 
                     <td class="text-right">
-                        <a href="{{ route('tag.show', ['cat' =>$cat->id])}}" title="show">
+                        <a href="" title="show">
                             show</i>
                         </a>
 
 
-                        <a href="{{route('tag.edit', ['cat'=>$cat->id])}}" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt">edit</i></a>
-                        <form style="display: inline-block" method="post" action="{{route('tag.destroy', ['cat'=>$cat->id])}}" >
+                        <a href="" class="btn btn-round btn-warning btn-icon btn-sm "><i class="far fa-calendar-alt">edit</i></a>
+                        <form style="display: inline-block" method="post" action="" >
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm p-0"><i class="" ></i>delete</button>

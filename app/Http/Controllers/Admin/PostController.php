@@ -20,7 +20,6 @@ class PostController extends Controller
     {
         $posts = Post::with(['tags'])->get();
 
-        dd($posts);
         return view('admin.pages.post.index',['posts'=> $posts] );
     }
 
@@ -51,9 +50,10 @@ class PostController extends Controller
             'title' => 'required',
             'body' => 'required',
             'image' => 'required',
+            'categories_id' => 'required'
         ]);
 //        $data= $request->all();
-        $data = collect($request->only(['title', 'body', 'image', 'tag_id']))->all();
+        $data = collect($request->only(['title', 'body', 'image', 'tag_id', 'categories_id']))->all();
 //        dd($data);
         $slug=Str::slug($request->input('title'));
 
