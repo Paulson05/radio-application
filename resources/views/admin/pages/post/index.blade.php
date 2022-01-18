@@ -46,7 +46,7 @@
                     <td>{{$post->title}}</td>
                     <td>{{$post->category->name}}</td>
                     <td>{{$post->body}}</td>
-                    <td>{{$post->tags->name}}</td>
+                    <td>{{$post->tags->title}}</td>
                     <td><img src="{{ asset('imgs/image').'/'.$post->image }}" width="50" /></td>
 
                     <td class="text-right">

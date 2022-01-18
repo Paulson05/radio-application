@@ -6,19 +6,21 @@
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form class="blog-src">
-                            <input type="text" placeholder="Search...">
+                        <form class="blog-src" action="{{route('search')}}">
+                            <input type="text" name="q" class="form-control"  placeholder="search"/>
                             <button><i class="fas fa-search"></i></button>
                         </form>
                     </div>
                     <div class="col-md-7 col-lg-12">
                         <div class="blog-filter"><h3>popular post</h3>
                             <ul class="blog-suggest">
+                                @if($recent_posts)
+                                @foreach($recent_posts as $post)
                                 <li>
                                     <div class="suggest-img"><a href="#"><img src="{{asset('/assets/img/suggest-1.jpg')}}" alt="suggest-1"></a></div>
                                     <div class="suggest-content">
                                         <div class="suggest-title">
-                                            <h4><a href="#">Business contents insurance is a type of business.</a></h4>
+                                            <h4><a href="#">{{$post->title}}</a></h4>
                                         </div>
                                         <div class="suggest-meta">
                                             <div class="suggest-date">
@@ -31,38 +33,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="suggest-img">
-                                        <a href="#"><img src="{{asset('assets/img/suggest-2.jpg')}}" alt="suggest-2"></a>
-                                    </div>
-                                    <div class="suggest-content">
-                                        <div class="suggest-title">
-                                            <h4><a href="#">Business contents insurance is a type of business.</a></h4>
-                                        </div>
-                                        <div class="suggest-meta">
-                                            <div class="suggest-date"><i class="far fa-calendar-alt"></i><p>02 feb 2020</p></div>
-                                            <div class="suggest-comment"><i class="far fa-comments"></i><p>13</p></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="suggest-img"><a href="#"><img src="{{asset('assets/img/suggest-3.jpg')}}" alt="suggest-3"></a></div>
-                                    <div class="suggest-content">
-                                        <div class="suggest-title">
-                                            <h4><a href="#">Business contents insurance is a type of business.</a></h4>
-                                        </div>
-                                        <div class="suggest-meta">
-                                            <div class="suggest-date">
-                                                <i class="far fa-calendar-alt"></i>
-                                                <p>02 feb 2020</p>
-                                            </div>
-                                            <div class="suggest-comment">
-                                                <i class="far fa-comments"></i>
-                                                <p>19</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                @endforeach
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -118,86 +90,22 @@
             </div>
             <div class="col-lg-8">
                 <div class="row">
+                    @if(count($posts)>0)
+                    @foreach($posts as $post)
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <div class="blog-card">
                             <img src="{{asset('assets/img/blog-1.jpg')}}" alt="blog-1">
                             <div class="blog-overlay">
                                 <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
+                                <h3><a href="#">{{$post->title}}</a></h3>
                                 <a class="btn btn-outline" href="#">read more</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-2.jpg')}}" alt="blog-2">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-3.jpg')}}" alt="blog-3">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-4.jpg')}}" alt="blog-4">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-5.jpg')}}" alt="blog-5">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-6.jpg')}}" alt="blog-6">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-7.jpg')}}" alt="blog-7">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="blog-card">
-                            <img src="{{asset('assets/img/blog-8.jpg')}}" alt="blog-8">
-                            <div class="blog-overlay">
-                                <p>03 february 2020</p>
-                                <h3><a href="#">Lorem ipsum dolor sit ame consectetur adipiscing</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    @else
+                    <p class="alert alert-danger">No Post Found</p>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-lg-12">

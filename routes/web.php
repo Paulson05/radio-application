@@ -40,6 +40,8 @@ Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.s
 Route::get('/home/team',[PagesController::class, 'team'])->name('frontend.team');
 Route::get('home/blog/list', [BlogController::class, 'blogList'])->name('blog.list');
 Route::get('home/blog/single', [BlogController::class, 'singleBlog'])->name('single.blog');
+Route::get('/search', [BlogController::class, 'index'])->name('search');
+
 
 
 Route::get('/dashboard',  [AdminController::class, 'dashboard'])->name('admin.dashboard');
