@@ -19,9 +19,8 @@ CreatePostTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('body');
-            $table->string('slug');
             $table->string('image');
-            $table->unsignedBigInteger('tag_id')->nullable();
+            $table->stirng('tag_id')->nullable();
             $table->timestamps();
         });
     }

@@ -12,6 +12,10 @@ class Post extends Model
     protected $table = 'post';
 
     public function tags(){
-        return $this->belongsTo(Tags::class, 'tag_id', 'id', );
+        return $this->belongsTo(Tags::class, 'tag_id' );
+    }
+
+    public function category(){
+        return $this->belongsTo(Category::class, 'categories_id');
     }
 }

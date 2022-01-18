@@ -44,10 +44,11 @@
                 @foreach($posts as $post)
                 <tr>
                     <td>{{$post->title}}</td>
-                    <td>{{$post->slug}}</td>
+                    <td>{{$post->category->name}}</td>
                     <td>{{$post->body}}</td>
-                    <td>{{$post->tag_id}}</td>
-                    <td><img src="{{$post->image}}" style="max-height: 90px; max-width: 50px;"></td>
+                    <td>{{$post->tags->name}}</td>
+                    <td><img src="{{ asset('imgs/image').'/'.$post->image }}" width="50" /></td>
+
                     <td class="text-right">
                         <a href="{{route('post.edit',['post'=>$post->id])}}" class="btn btn-round btn-info "><i class="fas fa-heart">edit</i></a>
                         <a href="{{route('post.show', ['post'=>$post->id])}}" class="btn btn-round ">show<i class="far fa-calendar-alt"></i></a>
