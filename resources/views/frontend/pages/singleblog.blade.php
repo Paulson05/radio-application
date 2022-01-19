@@ -28,7 +28,7 @@
                 <div class="blog-det-banner">
                     <img src="img/blog-details.jpg" alt="blog-details">
                     <div class="blog-det-content"><div class="blog-det-title">
-                            <h2><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit Sint quod soluta accusantium minus.</a></h2>
+                            <h2><a href="#">{{$detail->title}}</a></h2>
                         </div>
                         <ul class="blog-det-meta">
                             <li><i class="far fa-user"></i><p>By Admin</p></li>

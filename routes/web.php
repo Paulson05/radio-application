@@ -39,7 +39,7 @@ Route::get('/contact-us',[PagesController::class, 'contactUs'])->name('frontend.
 Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.scheduler');
 Route::get('/home/team',[PagesController::class, 'team'])->name('frontend.team');
 Route::get('home/blog/list', [BlogController::class, 'blogList'])->name('blog.list');
-Route::get('home/blog/single', [BlogController::class, 'singleBlog'])->name('single.blog');
+Route::get('/detail/{slug}/{id}', [BlogController::class, 'detail'])->name('single.blog');
 Route::get('/search', [BlogController::class, 'index'])->name('search');
 
 

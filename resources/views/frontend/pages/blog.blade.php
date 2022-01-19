@@ -97,9 +97,10 @@
                             <img src="{{asset('assets/img/blog-1.jpg')}}" alt="blog-1">
                             <div class="blog-overlay">
                                 <p>03 february 2020</p>
-                                <h3><a href="#">{{$post->title}}</a></h3>
-                                <a class="btn btn-outline" href="#">read more</a>
-                            </div>
+                                <h3><a href="{{url('detail/'.Str::slug($post->title).'/'.$post->id)}}">{{$post->title}}</a></h3>
+                                <a class="btn btn-outline" href="{{url('detail/'.Str::slug($post->title).'/'.$post->id)}}">read more</a>
+                            </div>+
+
                         </div>
                     </div>
                     @endforeach

@@ -8,11 +8,7 @@ class
 
 CreatePostTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('post', function (Blueprint $table) {
@@ -20,7 +16,8 @@ CreatePostTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('image');
-            $table->stirng('tag_id')->nullable();
+            $table->string('tag_id')->nullable();
+            $table->string('categories_id')->nullable();
             $table->timestamps();
         });
     }

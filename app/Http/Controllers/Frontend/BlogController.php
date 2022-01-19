@@ -10,13 +10,10 @@ class BlogController extends Controller
 {
     public function blogList(){
         $posts = Post::all();
-
         return view('frontend.pages.blog', ['posts'=>$posts]);
     }
 
-    public function singleBlog(){
-        return view('frontend.pages.singleblog');
-    }
+
 
 
     function index(Request $request){
@@ -29,4 +26,14 @@ class BlogController extends Controller
         }
         return view('frontend.pages.blog',['posts'=>$posts]);
     }
+
+    function detail(Request $request,$slug,$postId){
+        // Update post count
+
+//        Post::find($postId)->increment('views');
+
+        $detail=Post::find($postId);
+        return view('frontend.pages.singleblog',['detail'=>$detail]);
+    }
+
 }
