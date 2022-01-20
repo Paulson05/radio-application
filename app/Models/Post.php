@@ -18,6 +18,8 @@ class Post extends Model
     public function category(){
         return $this->belongsTo(Category::class, 'categories_id');
     }
-
+    function comments(){
+        return $this->hasMany('App\Models\Comment')->orderBy('id','desc');
+    }
 
 }

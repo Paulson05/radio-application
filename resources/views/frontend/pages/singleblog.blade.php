@@ -62,53 +62,31 @@
 
 
                 <div class="blog-det-comment">
-                    <h3>Comments (3)</h3>
+                    <h3>Comments ({{count($detail->comments)}})</h3>
                     <ul class="comment-list">
-                        <li><div class="comment">
-                                <div class="comment-img">
-                                    <a href="#"><img src="{{asset('assets/img/comment-1.jpg')}}" alt="comment-1"></a>
-                                </div>
-                                <div class="comment-content">
-                                    <h4>Miron Mahmud <span>02 February 2020</span></h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab aperiam corrupti maiores animi nisi ratione maxime quae in doloremque corporis tempore earum ut voluptas exercitationem.</p>
-                                </div>
-                                <div class="comment-reply">
-                                    <a href="#"><i class="fas fa-reply-all"></i>reply</a>
-                                </div>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="comment">
-                                        <div class="comment-img">
-                                            <a href="#"><img src="{{asset('assets/img/comment-2.jpg')}}" alt="comment-2"></a>
-                                        </div>
-                                        <div class="comment-content">
-                                            <h4>Tahmina Bonny <span>02 February 2020</span></h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab aperiam corrupti maiores animi nisi ratione maxime quae in doloremque corporis tempore earum ut voluptas exercitationem.</p>
-                                        </div>
-                                        <div class="comment-reply"><a href="#"><i class="fas fa-reply-all"></i>reply</a></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                        @if($detail->comments)
+                        @foreach($detail->comments as $comment)
                         <li>
                             <div class="comment">
                                 <div class="comment-img">
                                     <a href="#"><img src="{{asset('assets/img/comment-3.jpg')}}" alt="comment-3"></a>
                                 </div>
                                 <div class="comment-content">
-                                    <h4>Labonno Khan <span>02 February 2020</span></h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab aperiam corrupti maiores animi nisi ratione maxime quae in doloremque corporis tempore earum ut voluptas exercitationem.</p>
+                                    <h4>{{$comment->name}}<span>{{$comment->created_at}}</span></h4>
+                                    <p>{{$comment->comment}}</p>
                                 </div>
                                 <div class="comment-reply"><a href="#"><i class="fas fa-reply-all"></i>reply</a></div>
                             </div>
                         </li>
+                        @endforeach
+                        @endif
                     </ul>
                 </div>
 
                 <div class="blog-det-form">
                     <h3>Leave Your Comment</h3>
                     <form method="post" action="{{url('save-comment/'.Str::slug($detail->title).'/'.$detail->id)}}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">

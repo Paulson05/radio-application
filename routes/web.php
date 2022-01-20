@@ -48,7 +48,7 @@ Route::get('home/blog/list', [BlogController::class, 'blogList'])->name('blog.li
 Route::get('/detail/{slug}/{id}', [BlogController::class, 'detail'])->name('single.blog');
 Route::get('/search', [BlogController::class, 'index'])->name('search');
 
-Route::post('/save-comment/{slug}/{id}',[CommentsController::class,'save_comment']);
+Route::post('/save-comment/{slug}/{id}',[CommentsController::class,'postComment']);
 
 Route::get('/dashboard',  [AdminController::class, 'dashboard'])->name('admin.dashboard');
 Route::get('/login',  [AdminController::class, 'getLogin'])->name('admin.get.login');
