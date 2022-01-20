@@ -38,20 +38,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-5 col-lg-12">
-                        <div class="blog-filter">
-                            <h3>Top categories</h3>
-                            <ul class="blog-cate">
-                                @if(count($categories)>0)
-                                @foreach($categories as $category)
-                                <li><h5><a href="{{url('postcategory/'.Str::slug($category->name).'/'.$category->id)}}">{{$category->name}}</a></h5><p>23</p></li>
-                                @endforeach
-                                @else
-                                <p class="alert alert-danger">No Category Found</p>
-                                @endif
-                            </ul>
-                        </div>
-                    </div>
+
                     <div class="col-md-6 col-lg-12">
                         <div class="blog-filter">
                             <h3>Best tags</h3>
@@ -132,4 +119,6 @@
         </div>
     </div>
 </section>
+
+
 @endsection

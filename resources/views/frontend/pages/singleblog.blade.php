@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="blog-det-banner">
-                    <img src="img/blog-details.jpg" alt="blog-details">
+                    <img src="{{ asset('imgs/image').'/'.$detail->image }}" alt="blog-details">
                     <div class="blog-det-content"><div class="blog-det-title">
                             <h2><a href="#">{{$detail->title}}</a></h2>
                         </div>
@@ -40,20 +40,8 @@
                     </div>
                 </div>
                 <div class="blog-det-descrip content-fluid">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus beatae veniam suscipit error unde voluptatibus pariatur eaque. Odit, ullam. Dolorum, dicta! Sunt molestias voluptates minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore alias sapiente enim excepturi cumque impedit exercitationem similique eius iste soluta adipisci commodi quae, libero nulla necessitatibus harum accusantium temporibus ipsam, quidem molestiae atque repellat maxime et consectetur! Molestiae sapiente maiores inventore veritatis.</p></div><div class="blog-det-subtitle content-fluid"><h3>How to manage your concert?</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur eos, sed eveniet dignissimos numquam provident nihil unde ullam quod molestiae nostrum! Totam iusto quibusdam, enim <a href="#">asperiores</a>neque pariatur voluptatum eos eum fuga, sequi, hic odit aspernatur earum? Ratione, atque incidunt.</p></div><div class="blog-det-quote"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio nulla velit est quidem repellendus esse non saepe cumque sapiente.</p>
-                    <span>jaurge anderson</span>
-                </div>
-                <ul class="blog-det-list content-fluid">
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat tenetur, <a href="#">aperiam</a>odit, ratione eligendi nulla quae praesentium quo, a reiciendis inventore facilis veniam voluptates.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ullam impedit, architecto porro voluptas sequi ab beatae saepe quo magnam</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Ad ullam impedit architecto porro.</p>
-                    </li>
-                </ul>
+                    <p>{{$detail->body}}</p></div>
+
                 <div class="blog-det-footer">
                     <ul class="blog-det-tag">
                         <li><h4>Tags:</h4></li>
@@ -71,34 +59,8 @@
                         <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                     </ul>
                 </div>
-                <div class="blog-det-author">
-                    <div class="author-img">
-                        <a href="#"><img src="img/author.jpg" alt="author"></a>
-                        <ul class="author-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="author-content">
-                        <h4>Margarate Threcher <a href="#">www.margarate.com</a></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab aperiam corrupti maiores animi nisi ratione maxime quae in doloremque corporis tempore earum ut voluptas exercitationem.</p>
-                    </div>
-                </div>
-                <div class="blog-det-navigate">
-                    <div class="navigate-post">
-                        <img src="img/blog-details.jpg" alt="">
-                        <h4>
-                            <a href="#">Lorem ipsum dolor amet consectetur quod earum soluta adipisicing.</a>
-                        </h4>
-                    </div>
-                    <div class="navigate-post">
-                        <img src="img/blog-details.jpg" alt="">
-                        <h4><a href="#">Lorem ipsum dolor amet consectetur quod earum soluta adipisicing.</a></h4>
-                    </div>
-                    <a href="#" class="prev-arrow"><i class="fas fa-long-arrow-alt-left"></i>Previous Post</a>
-                    <a href="#" class="next-arrow">Next Post<i class="fas fa-long-arrow-alt-right"></i></a>
-                </div>
+
+
                 <div class="blog-det-comment">
                     <h3>Comments (3)</h3>
                     <ul class="comment-list">

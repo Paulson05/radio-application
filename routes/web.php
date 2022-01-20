@@ -37,6 +37,9 @@ Route::get('/', function () {
 Route::get('/about',[PagesController::class, 'about'])->name('frontend.about');
 Route::get('/contact-us',[PagesController::class, 'contactUs'])->name('frontend.contactus');
 Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.scheduler');
+Route::get('/all-categories',[BlogController::class, 'all_category']);
+Route::get('/postcategory/{slug}/{id}',[BlogController::class,'category']);
+
 Route::get('/home/team',[PagesController::class, 'team'])->name('frontend.team');
 Route::get('home/blog/list', [BlogController::class, 'blogList'])->name('blog.list');
 Route::get('/detail/{slug}/{id}', [BlogController::class, 'detail'])->name('single.blog');
