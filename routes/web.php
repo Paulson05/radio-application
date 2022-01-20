@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\UsersController;
+use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Frontend\PagesController;
 use Illuminate\Support\Facades\Route;
@@ -40,12 +41,14 @@ Route::get('/scheduler',[PagesController::class, 'scheduler'])->name('frontend.s
 Route::get('/all-categories',[BlogController::class, 'all_category']);
 Route::get('/postcategory/{slug}/{id}',[BlogController::class,'category']);
 
+
+
 Route::get('/home/team',[PagesController::class, 'team'])->name('frontend.team');
 Route::get('home/blog/list', [BlogController::class, 'blogList'])->name('blog.list');
 Route::get('/detail/{slug}/{id}', [BlogController::class, 'detail'])->name('single.blog');
 Route::get('/search', [BlogController::class, 'index'])->name('search');
 
-
+Route::post('/save-comment/{slug}/{id}',[CommentsController::class,'save_comment']);
 
 Route::get('/dashboard',  [AdminController::class, 'dashboard'])->name('admin.dashboard');
 Route::get('/login',  [AdminController::class, 'getLogin'])->name('admin.get.login');

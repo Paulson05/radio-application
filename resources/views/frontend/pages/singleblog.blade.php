@@ -66,7 +66,7 @@
                     <ul class="comment-list">
                         <li><div class="comment">
                                 <div class="comment-img">
-                                    <a href="#"><img src="img/comment-1.jpg" alt="comment-1"></a>
+                                    <a href="#"><img src="{{asset('assets/img/comment-1.jpg')}}" alt="comment-1"></a>
                                 </div>
                                 <div class="comment-content">
                                     <h4>Miron Mahmud <span>02 February 2020</span></h4>
@@ -80,7 +80,7 @@
                                 <li>
                                     <div class="comment">
                                         <div class="comment-img">
-                                            <a href="#"><img src="img/comment-2.jpg" alt="comment-2"></a>
+                                            <a href="#"><img src="{{asset('assets/img/comment-2.jpg')}}" alt="comment-2"></a>
                                         </div>
                                         <div class="comment-content">
                                             <h4>Tahmina Bonny <span>02 February 2020</span></h4>
@@ -94,7 +94,7 @@
                         <li>
                             <div class="comment">
                                 <div class="comment-img">
-                                    <a href="#"><img src="img/comment-3.jpg" alt="comment-3"></a>
+                                    <a href="#"><img src="{{asset('assets/img/comment-3.jpg')}}" alt="comment-3"></a>
                                 </div>
                                 <div class="comment-content">
                                     <h4>Labonno Khan <span>02 February 2020</span></h4>
@@ -105,24 +105,25 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="blog-det-form">
                     <h3>Leave Your Comment</h3>
-                    <form>
+                    <form method="post" action="{{url('save-comment/'.Str::slug($detail->title).'/'.$detail->id)}}">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Your Name">
+                                    <input type="text" name="name" placeholder="Your Name">
                                     <i class="fas fa-user"></i>
                                 </div>
                             </div>
                             <div class="col-lg-6"><div class="form-group">
-                                    <input type="email" placeholder="Your Email">
+                                    <input type="email" name="email" placeholder="Your Email">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <textarea placeholder="Your Comment"></textarea>
+                                    <textarea placeholder="Your Comment" name="comment"></textarea>
                                     <i class="fas fa-pen-nib"></i>
                                 </div>
                             </div>
