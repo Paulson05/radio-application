@@ -7,8 +7,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="banner-content">
-                            <h1>USHNO RADIO FM - 9.16</h1>
-                            <p>Listen with the ears &amp; understand with the heart</p>
+                            <h1>Gravity FM - 88.1</h1>
+                            <p>With you allways ....</p>
                             <a href="#" class="btn btn-inline"><i class="fas fa-eye"></i><span>live on youtube</span></a>
                         </div>
                     </div>

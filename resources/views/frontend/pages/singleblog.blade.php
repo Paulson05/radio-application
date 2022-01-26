@@ -34,7 +34,7 @@
                             <li><i class="far fa-user"></i><p>By Admin</p></li>
                             <li><i class="far fa-calendar-alt"></i><p>02 Feb 2020</p></li>
                             <li><i class="far fa-folder-open"></i><p>Concert</p></li><li>
-                                <i class="far fa-comments"></i><p>37 Comment</p></li><li>
+                                <i class="far fa-comments"></i><p>{{count($detail->comments)}} Comment</p></li><li>
                                 <i class="far fa-share-square"></i><p>21 Share</p></li>
                         </ul>
                     </div>

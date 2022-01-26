@@ -71,3 +71,5 @@ Route::resource('post', PostController::class)->only(['index','store','show','up
 Route::resource('users', UsersController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
 Route::resource('roles', RolesController::class)->only(['index','store','show','update','destroy','edit','create'  ]);
 
+
+
