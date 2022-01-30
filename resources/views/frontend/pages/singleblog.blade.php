@@ -45,9 +45,7 @@
                 <div class="blog-det-footer">
                     <ul class="blog-det-tag">
                         <li><h4>Tags:</h4></li>
-                        <li><a href="#">Crowd</a></li>
-                        <li><a href="#">Party</a></li>
-                        <li><a href="#">Concert</a></li>
+
                     </ul>
                     <ul class="blog-det-share"><li>
                             <h4>Share:</h4>

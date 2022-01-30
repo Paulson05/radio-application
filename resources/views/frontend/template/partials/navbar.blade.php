@@ -1,12 +1,12 @@
 <div class="navbar-bg">
     <div class="container">
         <div class="navbar-content">
-            <a class="navbar-logo" href="#"><img src="{{asset('assets/img/gravity.jpg')}}" alt="logo"></a>
+            <a class="navbar-logo" href="#"><img src="{{asset('assets/img/gravity.jpg')}}" alt="logo" style = "border-radius: 40px !important; "></a>
             <button class="navbar-toggle" type="button"><i class="fas fa-bars"></i></button>
             <div class="navbar-overlay">
                 <div class="navbar-slide">
                     <div class="slide-head">
-                        <a href="#"><img src="{{asset('assets/img/gravity.jpg')}}" alt="logo"></a>
+                        <a href="#"><img src="{{asset('assets/img/gravity.jpg')}}" alt="logo" style = "border-radius: 40px !important; "></a>
                         <button class="cencel"><i class="fas fa-times"></i></button>
                     </div>
                     <ul class="navbar-list">
@@ -23,7 +23,7 @@
                         <li class="navbar-item"><a class="navbar-link" href="{{route('frontend.contactus')}}"><span><i class="fas fa-headphones-alt"></i>Contact us</span></a></li>
                     </ul>
                     <div class="navbar-btn">
-                        <a class="btn btn-outline" href="sponsor.html"><i class="fas fa-hands-helping"></i><span>Become a Sponsor</span></a>
+                        <a class="" href="sponsor.html"><i class="fas fa-hands-helping"></i><span>Become a Sponsor</span></a>
                     </div>
                 </div>
             </div>
