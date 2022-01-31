@@ -56,16 +56,9 @@
                         <div class="blog-filter">
                             <h3>Best tags</h3>
                             <ul class="blog-tag">
-                                <li><a href="#">domain</a></li>
-                                <li><a href="#">cloud</a></li>
-                                <li><a href="#">web</a></li>
-                                <li><a href="#">payment</a></li>
-                                <li><a href="#">E-commerce</a></li>
-                                <li><a href="#">Sequerity</a></li>
-                                <li><a href="#">solution</a></li>
-                                <li><a href="#">offer</a></li>
-                                <li><a href="#">support</a></li>
-                                <li><a href="#">knowladge</a></li>
+                                @foreach($tags as $tag)
+                                <li><a href="#">{{$tag->title}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>

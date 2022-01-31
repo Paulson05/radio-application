@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tags;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -12,7 +13,8 @@ class BlogController extends Controller
     public function blogList(){
         $posts = Post::all();
         $categories=Category::orderBy('id','desc')->get();
-        return view('frontend.pages.blog', ['posts'=>$posts, 'categories'=>$categories]);
+        $tags = Tags::all();
+        return view('frontend.pages.blog', ['posts'=>$posts, 'categories'=>$categories , 'tags'=>$tags]);
     }
 
 
@@ -27,6 +29,8 @@ class BlogController extends Controller
             $posts=Post::orderBy('id','desc')->paginate(2);
         }
         $categories=Category::orderBy('id','desc')->get();
+
+
         return view('frontend.pages.blog',['posts'=>$posts, 'categories'=>$categories]);
     }
 
@@ -36,7 +40,8 @@ class BlogController extends Controller
 //        Post::find($postId)->increment('views');
 
         $detail=Post::find($postId);
-        return view('frontend.pages.singleblog',['detail'=>$detail]);
+        $tags = Tags::all();
+        return view('frontend.pages.singleblog',['detail'=>$detail, 'tags'=>$tags]);
     }
 
     function category(Request $request,$cat_slug,$cat_id){

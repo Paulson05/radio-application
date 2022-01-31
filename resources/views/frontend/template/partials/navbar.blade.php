@@ -14,7 +14,7 @@
                         <li class="navbar-item {{ Route::currentRouteNamed('frontend.about') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.about')}}"><span><i class="fas fa-headphones-alt"></i>About us</span></a></li>
                         <li class="navbar-item {{ Route::currentRouteNamed('frontend.scheduler') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.scheduler')}}"><span><i class="fas fa-headphones-alt"></i>Show Schedule</span></a></li>
                         <li class="navbar-player"><div class="player"><button class="player-btn" id="play-pause-button"><i class="fas fa-play"></i></button></div></li>
-                        <li class="navbar-item {{ Route::currentRouteNamed('frontend.team') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.team')}}"><span><i class="fas fa-headphones-alt"></i>Aops</span></a>
+                        <li class="navbar-item {{ Route::currentRouteNamed('frontend.team') ? 'active' : '' }}"><a class="navbar-link" href="{{route('frontend.team')}}"><span><i class="fas fa-headphones-alt"></i>OAps</span></a>
 
                         </li>
                         <li class="navbar-item "><a class="navbar-link {{ Route::currentRouteNamed('blog.list') ? 'active' : '' }} " href="{{route('blog.list')}}"><span><i class="fas fa-headphones-alt"></i>blogs</span></a>

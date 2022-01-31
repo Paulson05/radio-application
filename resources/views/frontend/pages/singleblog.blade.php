@@ -45,6 +45,9 @@
                 <div class="blog-det-footer">
                     <ul class="blog-det-tag">
                         <li><h4>Tags:</h4></li>
+                        @foreach($tags as $tag)
+                        <li><a href="#">{{$tag->title}}</a></li>
+                        @endforeach
 
                     </ul>
                     <ul class="blog-det-share"><li>
